@@ -215,9 +215,9 @@ td {
 /* Header */
 
 header {
-  background-color: #171717;
+  background-color: #330033;
   box-sizing: border-box;
-  color: #FDFDFB;
+  color: #99DDCC;
   width: 250px;
   float:left;
   position:fixed;

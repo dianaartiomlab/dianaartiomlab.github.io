@@ -87,7 +87,8 @@ Big Bank in Ionland is launching a new promo campaign on it is new "Unbelievable
 $$a(1+r)^n - \sum\limits_{i=0}^{12*n-1} p(1+r/12)^i = a(1 + r)^n - p\frac{(1+r/12)^{12n}-1}{r/12}$$
 
 ####Part A
- ```loan = 50000
+```
+loan = 50000
 monthly_pay = 700
 rate = 0.08
 percentage = (loan * rate) / 100

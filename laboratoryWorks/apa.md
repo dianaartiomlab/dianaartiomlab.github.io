@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Analiza și proiectarea algoritmilor
+title: APA
 ---
 
 #Laboratory work Nr. 1

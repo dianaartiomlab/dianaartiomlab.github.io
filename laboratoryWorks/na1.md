@@ -34,7 +34,6 @@ def bisection(f,a,b,tol=0.0001,max_it=100):
                 b=c
     return False
 
-bisection(func, 0, 1.2, tol=0.0001,max_it=100)
 ```
 ####Results:
 
@@ -72,8 +71,6 @@ def falsePosMethod(f, x0, x1, tol=0.0001, max_it=100):
         n = n + 1
     return a
 
-check = falsePosMethod(func, 0.8, 1)
-print check
 ```
 ####Results:
 0.426243709669

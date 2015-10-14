@@ -1,0 +1,316 @@
+---
+layout: default
+title: Numerical Analysis
+---
+
+##Laboratory work No. 2
+###Problem 1: Root finding
+Find the root of the function f(x) = sqrt x - e^(-x) on the interval [0, 1.2] with the error tolerance of 10^(-4). 
+a) Apply the bisection method starting with a = 0 and b = 1.2.
+b) Apply the false position method starting with a = 0 and b = 1.2.
+For each method compute also the absolute errors |x - x*| for each iterate
+####Part A
+```
+import math
+
+#given function
+def func(x):
+    return math.sqrt(x)-math.exp(-x)
+    
+#bisection method
+def bisection(f,a,b,tol=0.0001,max_it=100):
+    n=1
+    while n<=max_it:
+        c=(a+b)/2.0
+        print(("n=%d a=%.8f b=%.8f mid=%.8f f(mid)=%.8f")%(n,a,b,c,f(c)))
+        if f(c)==0 or (b-a)/2<tol:
+            print(("\nnumber of iterations = %d")%(n))
+            return c
+        else:
+            n=n+1
+            if f(c)*f(a)>0:
+                a=c
+            else:
+                b=c
+    return False
+
+```
+####Results:
+
+n=1 a=0.00000000  b=1.20000000 mid=0.60000000 f(mid)=0.22578503<br />
+n=2 a=0.00000000  b=0.60000000 mid=0.30000000 f(mid)=-0.19309566<br />
+n=3 a=0.30000000  b=0.60000000 mid=0.45000000 f(mid)=0.03319224<br />
+n=4 a=0.30000000  b=0.45000000 mid=0.37500000 f(mid)=-0.07491684<br />
+n=5 a=0.37500000  b=0.45000000 mid=0.41250000 f(mid)=-0.01973157<br />
+n=6 a=0.41250000  b=0.45000000 mid=0.43125000 f(mid)=0.00699981<br />
+n=7 a=0.41250000  b=0.43125000 mid=0.42187500 f(mid)=-0.00629696<br />
+n=8 a=0.42187500  b=0.43125000 mid=0.42656250 f(mid)=0.00036846<br />
+n=9 a=0.42187500  b=0.42656250 mid=0.42421875 f(mid)=-0.00295997<br />
+n=10 a=0.42421875 b=0.42656250 mid=0.42539062 f(mid)=-0.00129469<br />
+n=11 a=0.42539062 b=0.42656250 mid=0.42597656 f(mid)=-0.00046285<br />
+n=12 a=0.42597656 b=0.42656250 mid=0.42626953 f(mid)=-0.00004713<br />
+n=13 a=0.42626953 b=0.42656250 mid=0.42641602 f(mid)=0.00016068<br />
+n=14 a=0.42626953 b=0.42641602 mid=0.42634277 f(mid)=0.00005678<br />
+
+####Part B
+```
+import math
+def func(x):
+    return math.sqrt(x)-math.exp(-x)
+
+def falsePosMethod(f, x0, x1, tol=0.0001, max_it=100):
+    n = 1
+    while n<=max_it:
+        a = (f(x0) * x1 - f(x1) * x0) / (f(x0) - f(x1))
+        if abs(f(a) ) < tol:
+            return a
+        if f(a) * f(x0) < 0:
+            x0 = a
+        else:
+            x1 = a
+        n = n + 1
+    return a
+
+```
+####Results:
+0.426243709669
+
+###Conclusion:
+After implementting the rootfindigs methods we can analyze their behaviour and the way they converge to the real root. As we observe, bisection method coverges really slow to the real root. Bisection method never diverges from the root but always converges to the root. However, the convergence process may take a lot of iterations and takes a very long interval of time. 
+The second method seems to be more appropriate as it does not need such a bunch if iterations to get same result. In conclusion, false position method seems to be more appropriate in solving this problem.
+
+###Problem2 - Big Bank of Ionland}
+Big Bank in Ionland is launching a new promo campaign on it is new "Unbelievable offer" for mortgages. You are an ordinary citizen in Ionland with a good job which pays you a good salary. You are young, beautiful and healthy and consider to have a family and since every family should have it`s own nest you are interested in the offer. The only thing that is missing from the picture is how much actually should you pay each month. A typical mortgage loan will consist of an amount a that is borrowed at an anual interest rate of r\% for n years. Show that if the borrower makes a monthly payment of p ionian dolars, then the total amount left to pay after n years is 
+$$a(1+r)^n - \sum\limits_{i=0}^{12*n-1} p(1+r/12)^i = a(1 + r)^n - p\frac{(1+r/12)^{12n}-1}{r/12}$$
+
+####Part A
+```
+loan = 50000
+monthly_pay = 700
+rate = 0.08
+percentage = (loan * rate) / 100
+rem = loan
+months = 0
+while rem > 0:
+    rem = loan - monthly_pay + percentage
+    loan = rem
+    percentage = (loan * rate) / 100
+    months = months + 1
+    print(("After %d months, remains to pay %.2f dollars.") % (months,loan))
+print(months)
+```
+####Results:
+After 1 months, remains to pay 49340.00 dollars.<br />
+After 2 months, remains to pay 48679.47 dollars.<br />
+After 3 months, remains to pay 48018.42 dollars.<br />
+After 4 months, remains to pay 47356.83 dollars.<br />
+After 5 months, remains to pay 46694.72 dollars.<br />
+After 6 months, remains to pay 46032.07 dollars.<br />
+After 7 months, remains to pay 45368.90 dollars.<br />
+After 8 months, remains to pay 44705.19 dollars.<br />
+After 9 months, remains to pay 44040.96 dollars.<br />
+After 10 months, remains to pay 43376.19 dollars.<br />
+After 11 months, remains to pay 42710.89 dollars.<br />
+After 12 months, remains to pay 42045.06 dollars.<br />
+After 13 months, remains to pay 41378.69 dollars.<br />
+After 14 months, remains to pay 40711.80 dollars.<br />
+After 15 months, remains to pay 40044.37 dollars.<br />
+After 16 months, remains to pay 39376.40 dollars.<br />
+After 17 months, remains to pay 38707.90 dollars.<br />
+After 18 months, remains to pay 38038.87 dollars.<br />
+After 19 months, remains to pay 37369.30 dollars.<br />
+After 20 months, remains to pay 36699.20 dollars.<br />
+After 21 months, remains to pay 36028.56 dollars.<br />
+After 22 months, remains to pay 35357.38 dollars.<br />
+After 23 months, remains to pay 34685.66 dollars.<br />
+After 24 months, remains to pay 34013.41 dollars.<br />
+After 25 months, remains to pay 33340.62 dollars.<br />
+After 26 months, remains to pay 32667.30 dollars.<br />
+After 27 months, remains to pay 31993.43 dollars.<br />
+After 28 months, remains to pay 31319.03 dollars.<br />
+After 29 months, remains to pay 30644.08 dollars.<br />
+After 30 months, remains to pay 29968.60 dollars.<br />
+After 31 months, remains to pay 29292.57 dollars.<br />
+After 32 months, remains to pay 28616.00 dollars.<br />
+After 33 months, remains to pay 27938.90 dollars.<br />
+After 34 months, remains to pay 27261.25 dollars.<br />
+After 35 months, remains to pay 26583.06 dollars.<br />
+After 36 months, remains to pay 25904.32 dollars.<br />
+After 37 months, remains to pay 25225.05 dollars.<br />
+After 38 months, remains to pay 24545.23 dollars.<br />
+After 39 months, remains to pay 23864.86 dollars.<br />
+After 40 months, remains to pay 23183.96 dollars.<br />
+After 41 months, remains to pay 22502.50 dollars.<br />
+After 42 months, remains to pay 21820.50 dollars.<br />
+After 43 months, remains to pay 21137.96 dollars.<br />
+After 44 months, remains to pay 20454.87 dollars.<br />
+After 45 months, remains to pay 19771.24 dollars.<br />
+After 46 months, remains to pay 19087.05 dollars.<br />
+After 47 months, remains to pay 18402.32 dollars.<br />
+After 48 months, remains to pay 17717.04 dollars.<br />
+After 49 months, remains to pay 17031.22 dollars.<br />
+After 50 months, remains to pay 16344.84 dollars.<br />
+After 51 months, remains to pay 15657.92 dollars.<br />
+After 52 months, remains to pay 14970.44 dollars.<br />
+After 53 months, remains to pay 14282.42 dollars.<br />
+After 54 months, remains to pay 13593.85 dollars.<br />
+After 55 months, remains to pay 12904.72 dollars.<br />
+After 56 months, remains to pay 12215.05 dollars.<br />
+After 57 months, remains to pay 11524.82 dollars.<br />
+After 58 months, remains to pay 10834.04 dollars.<br />
+After 59 months, remains to pay 10142.71 dollars.<br />
+After 60 months, remains to pay 9450.82 dollars.<br />
+After 61 months, remains to pay 8758.38 dollars.<br />
+After 62 months, remains to pay 8065.39 dollars.<br />
+After 63 months, remains to pay 7371.84 dollars.<br />
+After 64 months, remains to pay 6677.74 dollars.<br />
+After 65 months, remains to pay 5983.08 dollars.<br />
+After 66 months, remains to pay 5287.86 dollars.<br />
+After 67 months, remains to pay 4592.10 dollars.<br />
+After 68 months, remains to pay 3895.77 dollars.<br />
+After 69 months, remains to pay 3198.89 dollars.<br />
+After 70 months, remains to pay 2501.44 dollars.<br />
+After 71 months, remains to pay 1803.45 dollars.<br />
+After 72 months, remains to pay 1104.89 dollars.<br />
+After 73 months, remains to pay 405.77 dollars.<br />
+After 74 months, remains to pay -293.90 dollars.<br />
+74
+
+####Part B
+```
+def func(x):
+    return 100000 * (1 + 0.08) ** 20 - x * ((1 + 0.08) ** 20 - 1) / 0.08
+def secant(f, x0, x1, tol=0.0001, max_it = 100):
+    n = 1
+    while n <= 100:
+        x2 = x1 - f(x1) * ((x1-x0) / (f(x1) - f(x0)))
+        if (abs(x2 - x1) < tol):
+            return x2
+        else:
+            x0 = x1
+            x1 = x2
+    return False
+```
+####Results:
+According to secant method we`ve learnt at Mr Boston`s lectures, the yearly payments for the loan to be paid in 20 years at
+8\% interest is: 10185.2208823\$
+
+####Part C
+```
+def func1(x):
+    return 100000 * (1 + x) ** 20 - 10000 * ((1 + x) ** 20 - 1) / x
+
+def secant(f, x0, x1, tol=0.0001, max_it=100):
+    n = 1
+    while n <= 100:
+        x2 = x1 - f(x1) * ((x1 - x0) / (f(x1) - f(x0)))
+        if (abs(x2 - x1) < tol):
+            return x2
+        else:
+            x0 = x1
+            x1 = x2
+    return False
+```
+####Results:
+The interest rate required for the loan to be paid in 20 years is 0.077546898357042
+that is somewhere 7.7\%.
+
+#Laboratory work Nr. 1
+
+###Ex.1
+```
+from math import *
+from decimal import *
+# from decimal import Context, MAX_EMAX
+
+#here is the code for problem 1
+
+a = [10, 100, 1000]
+
+getcontext().prec = 1000
+
+def function1(x):
+	a = Decimal(x) * Decimal(e) ** Decimal(x)
+	b = Decimal(x ** (-2))
+
+	f = (Decimal(a) - Decimal(b)) / (Decimal(a) + Decimal(b))
+
+	return f
+
+for i in range(len(a)):
+	print "The result for %s simulations is: " % str(a[i])
+	print function1(a[i])
+```
+
+###Ex. 2
+```
+from math import *
+
+# here is the code for problem 2
+c = 0.1
+for x in range (15) :
+	r = pow(10, (1 + 2*x/10)) - pow(10, (1+2*x*c))
+	print r
+```
+###Ex. 3
+```
+from math import *
+import pprint
+
+pp = pprint.PrettyPrinter(indent = 4)
+
+io = 1 - exp(-1)
+
+def function(k):
+	if k == 0:
+		return io
+	else:
+		return k*function(k-1) - exp(-1)
+
+A = []
+
+for i in range(25):
+	A.append(function(i))
+
+pp.pprint(A)
+```
+###Ex. 4
+```
+import numpy as np
+import math
+import matplotlib.pyplot as plt
+# definition of EscVel function
+def EscVel(z,c,N):
+    n = 0    
+    while abs(z)<=2 and n<N:
+        n += 1 
+        z = z ** 2 + c
+    return n
+# definition of JuliaSet function
+def  JuliaSet(zmax,c,N):
+    x = np.linspace(-zmax,zmax, 500)
+    y = np.linspace(-zmax,zmax, 500)
+# matrix for storing complex numbers
+    Z = []
+    for i in x:
+        for m in y:
+            complex_nr = i + m*1j
+        
+            Z.append(complex_nr)
+    Z = np.array(Z).reshape(500,500)      
+# matrix for storing the escape velocities
+    M = []
+    for line in Z:
+        for element in line:
+            M.append(EscVel(element,c,N))
+    M = np.array(M).reshape(500,500)
+    return M
+#definition of plot funtion
+def plot(M):
+    im = plt.figure().gca()
+    im.imshow(M, interpolation='nearest')
+    
+#plotting the result
+plot(JuliaSet(1,-0.297491+0.641051j, 100))
+```
+

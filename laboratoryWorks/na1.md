@@ -3,6 +3,112 @@ layout: default
 title: Numerical Analysis
 ---
 
+##Laboratory work No. 3
+###Problem 1: Root finding
+
+####Newton`s method
+```
+# first porblem
+from math import *
+
+def f(x):
+    return sqrt(x) - exp(-x)
+
+def derivative(x):
+    return 1.0 / (2 * sqrt(x)) - 1
+
+# Newton`s method
+def newtonMethod(f, derivative, x0, tolerance = 0.0001, maxIter = 100):
+    n = 1
+    print ("\n")
+    while n <= maxIter:
+        x1 = f(x0) - f(x0) / derivative(x0)
+        print ("n = %d, Xn = %.8f, Xn+1 - Xn = %.8f, f(x+1) = %.8f") % (n, x0, x1 - x0, f(x1))
+        
+        if abs(x1 - x0) < tolerance:
+            print "Number of iterations: ", n
+            return x1
+        else:
+            n = n + 1
+            x0 = x1
+    return False
+```
+####Results:
+
+n = 1, Xn = 0.60000000, Xn+1 - Xn = 0.26269128, f(x+1) = 0.50678699<br />
+n = 2, Xn = 0.86269128, Xn+1 - Xn = 0.74180283, f(x+1) = 1.06569506<br />
+n = 3, Xn = 1.60449411, Xn+1 - Xn = 1.22189676, f(x+1) = 1.62196112<br />
+n = 4, Xn = 2.82639087, Xn+1 - Xn = 1.10411217, f(x+1) = 1.96291584<br />
+n = 5, Xn = 3.93050304, Xn+1 - Xn = 0.65733542, f(x+1) = 2.13174918<br />
+n = 6, Xn = 4.58783846, Xn+1 - Xn = 0.32482185, f(x+1) = 2.20909929<br />
+n = 7, Xn = 4.91266031, Xn+1 - Xn = 0.14904564, f(x+1) = 2.24348879<br />
+n = 8, Xn = 5.06170595, Xn+1 - Xn = 0.06633308, f(x+1) = 2.25858922<br />
+n = 9, Xn = 5.12803903, Xn+1 - Xn = 0.02914138, f(x+1) = 2.26518471<br />
+n = 10, Xn = 5.15718041, Xn+1 - Xn = 0.01273111, f(x+1) = 2.26805887<br />
+n = 11, Xn = 5.16991152, Xn+1 - Xn = 0.00554847, f(x+1) = 2.26931012<br />
+n = 12, Xn = 5.17545999, Xn+1 - Xn = 0.00241559, f(x+1) = 2.26985460<br />
+n = 13, Xn = 5.17787558, Xn+1 - Xn = 0.00105118, f(x+1) = 2.27009150<br />
+n = 14, Xn = 5.17892676, Xn+1 - Xn = 0.00045734, f(x+1) = 2.27019455<br />
+n = 15, Xn = 5.17938411, Xn+1 - Xn = 0.00019896, f(x+1) = 2.27023939<br />
+n = 16, Xn = 5.17958307, Xn+1 - Xn = 0.00008655, f(x+1) = 2.27025889<br />
+Number of iterations:  16
+
+
+####Newton`s simplified
+```
+
+# Newton`s simplified method
+def newtonSimplifMethod(f, x0, tolerance = 0.0001, maxIter = 100):
+    n = 1
+    print ("\n")
+    while n <= maxIter:
+        x1 = x0 - f(x0) / ((f(x0 + f(x0)) - f(x0)) / f(x0)) 
+        print ("n = %d, Xn = %.8f, Xn+1 - Xn = %.8f, f(x+1) = %.8f") % (n, x0, x1 - x0, f(x1))
+        
+        if abs(x1 - x0) < tolerance:
+            print "Number of iterations: ", n
+            return x1
+        else:
+            n = n + 1
+            x0 = x1
+    return False
+
+```
+####Results:
+n = 1, Xn = 0.60000000, Xn+1 - Xn = -0.20803375, f(x+1) = -0.04965483<br />
+n = 2, Xn = 0.39196625, Xn+1 - Xn = 0.03270102, f(x+1) = -0.00232234<br />
+n = 3, Xn = 0.42466728, Xn+1 - Xn = 0.00163193, f(x+1) = -0.00000503<br />
+n = 4, Xn = 0.42629921, Xn+1 - Xn = 0.00000354, f(x+1) = -0.00000000<br />
+Number of iterations:  4
+
+
+####Secant method
+```
+# Secant method
+def secant(f, x0, x1, tol=0.0001, maxIt=100):
+    n = 1
+    print("\n")
+    while n <= maxIt:
+        x2 = x1 - f(x1) * ((x1 - x0) / (f(x1) - f(x0)))
+        print(("n = %d, Xn = %.8f, Xn+1 = %.8f, root = %.8f, f(root) = %.8f") % (n - 1, x0, x1, x2, f(x2)))
+        if abs(x2 - x1) < tol:
+            print "\nNumber of iterations =", n
+            return x2
+        else:
+            n = n + 1
+            x0 = x1
+            x1 = x2
+    return False
+
+```
+####Results:
+n = 1, Xn = 0.60000000, Xn+1 - Xn = -0.20803375, f(x+1) = -0.04965483<br />
+Number of iterations:  1
+
+###Conclusion:
+By implementing each rootfinding method we can analyze their behaviour and the way they converge to the real root.Therefore we see that the rate of convergence of Newton , simplified Newton and secant method is greater. Here are the results for f(x) in estimated root . We see that newton’s method gave the best approximation for the real root , because it is closer to 0.0 than others.
+
+
 ##Laboratory work No. 2
 ###Problem 1: Root finding
 Find the root of the function f(x) = sqrt x - e^(-x) on the interval [0, 1.2] with the error tolerance of 10^(-4). 

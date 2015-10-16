@@ -85,7 +85,7 @@ plt.show()
 
 ##Conclusion
 By analyzing the results it can be reasonably said that the algorithms don't have the same complexity. The thing is, in a given interval of time, the algorithms converge in a different way. 
-When doing the recursive implementation of fibonacci algorithm, you are adding redundant calls by recomputing the same values over and over again. However this can be overcome by a technique called Memoization, that improves the efficiency of recursive fibonacci by storing the values, you have calculated once. Further calls of fib(x) for known values may be replaced by a simple lookup, eliminating the need for further recursive calls.
+When doing the recursive implementation of fibonacci algorithm, you are adding redundant calls by recomputing the same values over and over again. 
 Iterative functions – are loop based imperative repetitions of a process (in contrast to recursion which has a more declarative approach).
 This is the main difference between these approaches. <br />
 P.S. There are lots of algorithms for computing fibonacci that can be found on google.

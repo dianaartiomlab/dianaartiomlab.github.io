@@ -81,6 +81,7 @@ plt.plot(B)
 plt.show()
 
 ```
+<div class="custom-image"><img src="https://40.media.tumblr.com/ae6ad8b1aeab2d26085a7b4653a37e9a/tumblr_nw6dys7zk31udztn8o1_540.png" /></div>
 
 
 ##Conclusion

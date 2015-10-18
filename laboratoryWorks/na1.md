@@ -163,38 +163,38 @@ def aitken(f, x0, tol = 0.000001, max_it=100):
 
 Fixed: 
 <br />
-First function: 
-('Root is =', 0.8526051018601054)
-('Number of iterations =', 74)
-Second function: 
-('Root is =', 0.7141895972112392)
-('Number of iterations =', 59)
-Third funtion: 
-('Root is =', 6.015529419935787)
-('Number of iterations =', 388)
+First function: <br />
+('Root is =', 0.8526051018601054)<br />
+('Number of iterations =', 74)<br />
+Second function:<br /> 
+('Root is =', 0.7141895972112392)<br />
+('Number of iterations =', 59)<br />
+Third funtion: <br />
+('Root is =', 6.015529419935787)<br />
+('Number of iterations =', 388)<br />
 
 <br />Aiteken
 
-Firsst function
-n=0, Xn=0.800000, lambda=-0.855751, alfa-Xn=-0.045495
-n=1, Xn=0.853163, lambda=-0.852570, alfa-Xn=0.000476
-n=2, Xn=0.852606, lambda=-0.852605, alfa-Xn=0.000000
-('Root is =', 0.8526055020137262, 'with', 3, 'iterations')
-Second function
-n=0, Xn=0.750000, lambda=-0.828493, alfa-Xn=0.030050
-n=1, Xn=0.713729, lambda=-0.825759, alfa-Xn=-0.000380
-n=2, Xn=0.714190, lambda=-0.825822, alfa-Xn=-0.000000
-('Root is =', 0.7141900480718033, 'with', 3, 'iterations')
-Third function
-n=0, Xn=0.600000, lambda=-0.005160, alfa-Xn=-0.032057
-n=1, Xn=6.812586, lambda=0.869962, alfa-Xn=-0.184443
-n=2, Xn=6.600573, lambda=0.951367, alfa-Xn=-0.166028
-n=3, Xn=6.426058, lambda=0.990070, alfa-Xn=-0.366013
-n=4, Xn=6.056374, lambda=0.974248, alfa-Xn=-0.047126
-n=5, Xn=6.008003, lambda=0.962413, alfa-Xn=0.007031
-n=6, Xn=6.015309, lambda=0.964336, alfa-Xn=0.000187
-n=7, Xn=6.015503, lambda=0.964387, alfa-Xn=0.000000
-('Root is =', 6.015503072969342, 'with', 8, 'iterations')
+Firsst function<br />
+n=0, Xn=0.800000, lambda=-0.855751, alfa-Xn=-0.045495<br />
+n=1, Xn=0.853163, lambda=-0.852570, alfa-Xn=0.000476<br />
+n=2, Xn=0.852606, lambda=-0.852605, alfa-Xn=0.000000<br />
+('Root is =', 0.8526055020137262, 'with', 3, 'iterations')<br />
+Second function<br />
+n=0, Xn=0.750000, lambda=-0.828493, alfa-Xn=0.030050<br />
+n=1, Xn=0.713729, lambda=-0.825759, alfa-Xn=-0.000380<br />
+n=2, Xn=0.714190, lambda=-0.825822, alfa-Xn=-0.000000<br />
+('Root is =', 0.7141900480718033, 'with', 3, 'iterations')<br />
+Third function<br />
+n=0, Xn=0.600000, lambda=-0.005160, alfa-Xn=-0.032057<br />
+n=1, Xn=6.812586, lambda=0.869962, alfa-Xn=-0.184443<br />
+n=2, Xn=6.600573, lambda=0.951367, alfa-Xn=-0.166028<br />
+n=3, Xn=6.426058, lambda=0.990070, alfa-Xn=-0.366013<br />
+n=4, Xn=6.056374, lambda=0.974248, alfa-Xn=-0.047126<br />
+n=5, Xn=6.008003, lambda=0.962413, alfa-Xn=0.007031<br />
+n=6, Xn=6.015309, lambda=0.964336, alfa-Xn=0.000187<br />
+n=7, Xn=6.015503, lambda=0.964387, alfa-Xn=0.000000<br />
+('Root is =', 6.015503072969342, 'with', 8, 'iterations')<br />
 <br />
 ###Conclusion: 
 As we see from results , Aitken’s extrapolation gave more precise results in

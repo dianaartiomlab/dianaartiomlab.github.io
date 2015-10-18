@@ -108,7 +108,15 @@ Number of iterations:  1
 ###Conclusion:
 By implementing each rootfinding method we can analyze their behaviour and the way they converge to the real root.Therefore we see that the rate of convergence of Newton , simplified Newton and secant method is greater. Here are the results for f(x) in estimated root . We see that newton’s method gave the best approximation for the real root , because it is closer to 0.0 than others.
 
-###Problem 2: Root finding
+###Problem 2: Root Finding Part II
+
+<div class="custom-image"><img src="https://40.media.tumblr.com/63817203ae0facae42cf9e75c6249379/tumblr_nwfd5yPqDO1udztn8o1_1280.png" /></div>
+<div class="custom-image"><img src="https://41.media.tumblr.com/cce850f70b15772f9c714b8952a5a4d9/tumblr_nwfd5qatoJ1udztn8o1_1280.png" /></div>
+<div class="custom-image"><img src="https://36.media.tumblr.com/bf904883ee549416ddf90d32a9020c1b/tumblr_nwfd5gBmD31udztn8o1_1280.png" /></div>
+
+
+
+###Problem 3: Fixed-point iteration method
 
 
 ```

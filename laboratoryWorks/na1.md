@@ -108,6 +108,90 @@ Number of iterations:  1
 ###Conclusion:
 By implementing each rootfinding method we can analyze their behaviour and the way they converge to the real root.Therefore we see that the rate of convergence of Newton , simplified Newton and secant method is greater. Here are the results for f(x) in estimated root . We see that newton’s method gave the best approximation for the real root , because it is closer to 0.0 than others.
 
+###Problem 2: Root finding
+
+
+```
+import math
+
+def func1(x):
+    return 2 * math.exp(-x)
+
+def func2(x):
+    return 0.9 / ( 1 + x ** 4)
+
+def func3(x):
+    return 6.28 + math.sin(x)
+
+def fixed(f, x0, tol = 0.000001, max_it=1000):
+    n=1
+    while n <= max_it:
+        x1 = f(x0)
+        if (abs(x1 - x0) < tol):
+            print("Root is =", x1)
+            print("Number of iterations =", n)
+            return
+        else:
+            x0 = x1
+            n = n + 1
+
+
+def aitken(f, x0, tol = 0.000001, max_it=100):
+    n = 1
+    while n <= max_it:
+        x1 = f(x0)
+        x2 = f(x1)
+        app_x2 = x2 - ((x2 - x1) **2) / ((x2 - x1) - (x1 - x0))
+        lambda_a = (x2 - x1) / (x1 - x0)
+        print(("n=%d, Xn=%f, lambda=%f, alfa-Xn=%f") % (n - 1, x0, lambda_a, lambda_a / (1 - lambda_a) * (x1 - x0)))
+        if (abs(app_x2 - x2) <= tol):
+            print("Root is =", app_x2, "with", n, "iterations")
+            return
+        else:
+            x0 = app_x2
+            n = n + 1
+```
+####Results:
+
+Fixed: 
+<br />
+First function: 
+('Root is =', 0.8526051018601054)
+('Number of iterations =', 74)
+Second function: 
+('Root is =', 0.7141895972112392)
+('Number of iterations =', 59)
+Third funtion: 
+('Root is =', 6.015529419935787)
+('Number of iterations =', 388)
+
+<br />Aiteken
+
+Firsst function
+n=0, Xn=0.800000, lambda=-0.855751, alfa-Xn=-0.045495
+n=1, Xn=0.853163, lambda=-0.852570, alfa-Xn=0.000476
+n=2, Xn=0.852606, lambda=-0.852605, alfa-Xn=0.000000
+('Root is =', 0.8526055020137262, 'with', 3, 'iterations')
+Second function
+n=0, Xn=0.750000, lambda=-0.828493, alfa-Xn=0.030050
+n=1, Xn=0.713729, lambda=-0.825759, alfa-Xn=-0.000380
+n=2, Xn=0.714190, lambda=-0.825822, alfa-Xn=-0.000000
+('Root is =', 0.7141900480718033, 'with', 3, 'iterations')
+Third function
+n=0, Xn=0.600000, lambda=-0.005160, alfa-Xn=-0.032057
+n=1, Xn=6.812586, lambda=0.869962, alfa-Xn=-0.184443
+n=2, Xn=6.600573, lambda=0.951367, alfa-Xn=-0.166028
+n=3, Xn=6.426058, lambda=0.990070, alfa-Xn=-0.366013
+n=4, Xn=6.056374, lambda=0.974248, alfa-Xn=-0.047126
+n=5, Xn=6.008003, lambda=0.962413, alfa-Xn=0.007031
+n=6, Xn=6.015309, lambda=0.964336, alfa-Xn=0.000187
+n=7, Xn=6.015503, lambda=0.964387, alfa-Xn=0.000000
+('Root is =', 6.015503072969342, 'with', 8, 'iterations')
+<br />
+###Conclusion: 
+As we see from results , Aitken’s extrapolation gave more precise results in
+less iterations , and the execution time of the program was increased .
+<br />
 
 ##Laboratory work No. 2
 ###Problem 1: Root finding

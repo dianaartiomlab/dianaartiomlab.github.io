@@ -143,21 +143,6 @@ def fixed(f, x0, tol = 0.000001, max_it=1000):
             x0 = x1
             n = n + 1
 
-
-def aitken(f, x0, tol = 0.000001, max_it=100):
-    n = 1
-    while n <= max_it:
-        x1 = f(x0)
-        x2 = f(x1)
-        app_x2 = x2 - ((x2 - x1) **2) / ((x2 - x1) - (x1 - x0))
-        lambda_a = (x2 - x1) / (x1 - x0)
-        print(("n=%d, Xn=%f, lambda=%f, alfa-Xn=%f") % (n - 1, x0, lambda_a, lambda_a / (1 - lambda_a) * (x1 - x0)))
-        if (abs(app_x2 - x2) <= tol):
-            print("Root is =", app_x2, "with", n, "iterations")
-            return
-        else:
-            x0 = app_x2
-            n = n + 1
 ```
 ####Results:
 
@@ -173,32 +158,8 @@ Third funtion: <br />
 ('Root is =', 6.015529419935787)<br />
 ('Number of iterations =', 388)<br />
 
-<br />Aiteken
-
-Firsst function<br />
-n=0, Xn=0.800000, lambda=-0.855751, alfa-Xn=-0.045495<br />
-n=1, Xn=0.853163, lambda=-0.852570, alfa-Xn=0.000476<br />
-n=2, Xn=0.852606, lambda=-0.852605, alfa-Xn=0.000000<br />
-('Root is =', 0.8526055020137262, 'with', 3, 'iterations')<br />
-Second function<br />
-n=0, Xn=0.750000, lambda=-0.828493, alfa-Xn=0.030050<br />
-n=1, Xn=0.713729, lambda=-0.825759, alfa-Xn=-0.000380<br />
-n=2, Xn=0.714190, lambda=-0.825822, alfa-Xn=-0.000000<br />
-('Root is =', 0.7141900480718033, 'with', 3, 'iterations')<br />
-Third function<br />
-n=0, Xn=0.600000, lambda=-0.005160, alfa-Xn=-0.032057<br />
-n=1, Xn=6.812586, lambda=0.869962, alfa-Xn=-0.184443<br />
-n=2, Xn=6.600573, lambda=0.951367, alfa-Xn=-0.166028<br />
-n=3, Xn=6.426058, lambda=0.990070, alfa-Xn=-0.366013<br />
-n=4, Xn=6.056374, lambda=0.974248, alfa-Xn=-0.047126<br />
-n=5, Xn=6.008003, lambda=0.962413, alfa-Xn=0.007031<br />
-n=6, Xn=6.015309, lambda=0.964336, alfa-Xn=0.000187<br />
-n=7, Xn=6.015503, lambda=0.964387, alfa-Xn=0.000000<br />
-('Root is =', 6.015503072969342, 'with', 8, 'iterations')<br />
-<br />
 ###Conclusion: 
-As we see from results , Aitken’s extrapolation gave more precise results in
-less iterations , and the execution time of the program was increased .
+ffffed .
 <br />
 
 ##Laboratory work No. 2

@@ -159,7 +159,7 @@ Third funtion: <br />
 ('Number of iterations =', 388)<br />
 
 ###Conclusion: 
-ffffed .
+As we`ve seen, the greatest advantage of this method is that it converges rapidly and, it also can be easily implemented. But, when applying it one should be aware that it diverges if the absolute value of the derivative of g(x) with respect to x is greater than 1 for all x in the interval containing the root. Also, if the equation has more than 1 root, and f(x) is continuous then this method may miss one or more roots.
 <br />
 
 ##Laboratory work No. 2

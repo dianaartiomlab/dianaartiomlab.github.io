@@ -13,8 +13,7 @@ title: Numerical Analysis
 
 using namespace std;
 
-int main(void)
-{
+int main(void){
     float a[10][10], b[10], x[10], y[10];
     int n = 3;
     int iterations = 20;
@@ -32,13 +31,10 @@ int main(void)
     b[0] = -1;
     b[1] = 3;
 
-    while (iterations > 0)
-    {
-        for (int i = 0; i < n; i++)
-        {
+    while (iterations > 0){
+        for (int i = 0; i < n; i++){
             y[i] = (b[i] / a[i][i]);
-            for (int j = 0; j < n; j++)
-            {
+            for (int j = 0; j < n; j++){
                 if (j == i)
                     continue;
                 y[i] = y[i] - ((a[i][j] / a[i][i]) * x[j]);
@@ -50,7 +46,6 @@ int main(void)
         iterations--;
     }
     return 0;
-}
 }
 
 ```
@@ -92,32 +87,34 @@ not respect the conditions of the method.
 
 using namespace std;
 
-int main(void)
-{
+int main(void){
     float a[10][10], b[10], x[10], y[10];
-    int n = 2;
+    int n = 3;
     int iterations = 20;
 
     //initial values
     x[0] = x[1] = x[2] = 0;
 
     //values for the matrix a
-    a[0][0] = 1;
-    a[0][1] = -2;
-    a[1][0] = 2;
-    a[1][1] = 1;
+    a[0][0] = 3;
+    a[0][1] = -0.1;
+    a[0][2] = -0.2;
+    a[1][0] = 0.1;
+    a[1][1] = 7;
+    a[1][2] = -0.3;
+    a[2][0] = 0.3;
+    a[2][1] = -0.2;
+    a[2][2] = 10;
 
     //values from the rightpart of equal sign
-    b[0] = -1;
-    b[1] = 3;
+    b[0] = 7.85;
+    b[1] = -19.3;
+    b[2] = 71.4;
 
-    while (iterations > 0)
-    {
-        for (int i = 0; i < n; i++)
-        {
+    while (iterations > 0){
+        for (int i = 0; i < n; i++){
             y[i] = (b[i] / a[i][i]);
-            for (int j = 0; j < n; j++)
-            {
+            for (int j = 0; j < n; j++){
                 if (j == i)
                     continue;
                 y[i] = y[i] - ((a[i][j] / a[i][i]) * x[j]);
@@ -130,7 +127,6 @@ int main(void)
     }
     return 0;
 }
-
 
 ```
 

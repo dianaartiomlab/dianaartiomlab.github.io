@@ -3,6 +3,144 @@ layout: default
 title: Numerical Analysis
 ---
 
+##Laboratory work No. 4
+###Matrices 1
+
+####(C++ code of the problem)
+
+```
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int x1= 0;
+    int x2 = 0;
+
+    for(int i = 0; i < 20; i++) {
+        x1 = 2 * x2 - 1;
+        x2 = 3 - 2 * x1;
+        cout << "x1 - " << x1 << "\tx2 - " << x2 << endl;
+    }
+    return 0;
+}
+
+```
+####Results:
+x1 - -1             x2 - 5<br/>
+x1 - 9              x2 - -15<br/>
+x1 - -31            x2 - 65<br/>
+x1 - 129            x2 - -255<br/>
+x1 - -511           x2 - 1025<br/>
+x1 - 2049           x2 - -4095<br/>
+x1 - -8191          x2 - 16385<br/>
+x1 - 32769          x2 - -65535<br/>
+x1 - -131071        x2 - 262145<br/>
+x1 - 524289         x2 - -1048575<br/>
+x1 - -2097151       x2 - 4194305<br/>
+x1 - 8388609        x2 - -16777215<br/>
+x1 - -33554431      x2 - 67108865<br/>
+x1 - 134217729      x2 - -268435455<br/>
+x1 - -536870911     x2 - 1073741825<br/>
+x1 - -2147483647    x2 - 1<br/>
+x1 - 1              x2 - 1<br/>
+x1 - 1              x2 - 1<br/>
+x1 - 1              x2 - 1<br/>
+x1 - 1              x2 - 1<br/>
+
+###Matrices 2
+
+####(C++ code of the problem)
+
+```
+#include<iostream>
+
+using namespace std;
+
+int main(void)
+{
+    float a[10][10], b[10], x[10], y[10];
+    int n = 3;
+    int iterations = 20;
+
+    //initial values
+    x[0] = x[1] = x[2] = 0;
+
+    //values for the matrix a
+    a[0][0] = 3;
+    a[0][1] = -0.1;
+    a[0][2] = -0.2;
+    a[1][0] = 0.1;
+    a[1][1] = 7;
+    a[1][2] = -0.3;
+    a[2][0] = 0.3;
+    a[2][1] = -0.2;
+    a[2][2] = 10;
+
+    //values from the rightpart of equal sign
+    b[0] = 7.85;
+    b[1] = -19.3;
+    b[2] = 71.4;
+
+    while (iterations > 0)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            y[i] = (b[i] / a[i][i]);
+            for (int j = 0; j < n; j++)
+            {
+                if (j == i)
+                    continue;
+                y[i] = y[i] - ((a[i][j] / a[i][i]) * x[j]);
+                x[i] = y[i];
+            }
+            cout << "x" << i+1 << " = " << y[i] << "\t\t\t";
+        }
+        cout << "\n";
+        iterations--;
+    }
+    return 0;
+}
+
+
+```
+
+###Results: 
+x1 = 2.61667            x2 = -2.79452            x3 = 7.00561<br/>    
+x1 = 2.99056            x2 = -2.49962            x3 = 7.00029<br/> 
+x1 = 3.00003            x2 = -2.49999            x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>           
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>    
+x1 = 3                  x2 = -2.5                x3 = 7<br/>      
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/>     
+x1 = 3                  x2 = -2.5                x3 = 7<br/> 
+
+##Conclusion:
+By performing this laboratory work we found out some facts.<br/>
+Guass-Seidel method is one of the common methods employed for solving power flow equations.
+<ul>Advantages:
+    <li>Simplicity in technique</li>
+    <li>Small computer memory requirement</li>
+    <li>Less computational time per iteration</li>
+</ul>
+<ul>Disadvantages:
+    <li>Slow rate of convergence resulting in larger number of iterations</li>
+    <li>Increase in the number of iterations with increase in the number of buses</li>
+
+<hr>
+
 ##Laboratory work No. 3
 ###Problem 1: Root finding
 

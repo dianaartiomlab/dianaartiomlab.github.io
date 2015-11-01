@@ -176,7 +176,7 @@ using namespace std;
 int main(void){
     float a[10][10], b[10], x[10], y[10];
     int n = 3;
-    int iterations = 20;
+    int iterations = 9;
 
     //initial values
     x[0] = x[1] = x[2] = 0;
@@ -236,61 +236,6 @@ int main(void){
     <tr>
         <td>3.00003</td>
         <td>-2.49999</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>-2.5</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>-2.5</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>-2.5</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>-2.5</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>-2.5</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>-2.5</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>-2.5</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>-2.5</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>-2.5</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>-2.5</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>-2.5</td>
         <td>7</td>
     </tr>
     <tr>

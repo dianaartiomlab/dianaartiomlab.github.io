@@ -131,26 +131,113 @@ int main(void){
 ```
 
 ###Results: 
-x1 = 2.61667     x2 = -2.79452     x3 = 7.00561<br/>    
-x1 = 2.99056     x2 = -2.49962     x3 = 7.00029<br/> 
-x1 = 3.00003     x2 = -2.49999     x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>           
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>    
-x1 = 3           x2 = -2.5         x3 = 7<br/>      
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/>     
-x1 = 3           x2 = -2.5         x3 = 7<br/> 
+<table>
+    <tr>
+        <th>x1</th>
+        <th>x2</th>
+        <th>x3</th>
+    </tr>
+    <tr>
+        <td>2.61667 </td>
+        <td>-2.79452</td>
+        <td>7.00561</td>
+    </tr>
+    <tr>
+        <td>2.99056 </td>
+        <td>-2.49962 </td>
+        <td>7.00029</td>
+    </tr>
+    <tr>
+        <td>3.00003</td>
+        <td>-2.49999</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+</table>
 
 ##Conclusion:
 The second method converges, and it does it rapidly because the matrix satisfies the requirments. <br/>

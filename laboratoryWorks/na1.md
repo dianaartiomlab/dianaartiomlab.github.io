@@ -9,20 +9,48 @@ title: Numerical Analysis
 ####(C++ code of the problem)
 
 ```
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 
-int main(){
-    int x1= 0;
-    int x2 = 0;
+int main(void)
+{
+    float a[10][10], b[10], x[10], y[10];
+    int n = 3;
+    int iterations = 20;
 
-    for(int i = 0; i < 20; i++) {
-        x1 = 2 * x2 - 1;
-        x2 = 3 - 2 * x1;
-        cout << "x1 - " << x1 << "\tx2 - " << x2 << endl;
+    //initial values
+    x[0] = x[1] = x[2] = 0;
+    //values for the matrix a
+    a[0][0] = 1;
+    a[0][1] = -2;
+    a[1][0] = 2;
+    a[1][1] = 1;
+
+
+    //values from the rightpart of equal sign
+    b[0] = -1;
+    b[1] = 3;
+
+    while (iterations > 0)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            y[i] = (b[i] / a[i][i]);
+            for (int j = 0; j < n; j++)
+            {
+                if (j == i)
+                    continue;
+                y[i] = y[i] - ((a[i][j] / a[i][i]) * x[j]);
+                x[i] = y[i];
+            }
+            cout << "x" << i+1 << " = " << y[i] << "\t\t\t";
+        }
+        cout << "\n";
+        iterations--;
     }
     return 0;
+}
 }
 
 ```

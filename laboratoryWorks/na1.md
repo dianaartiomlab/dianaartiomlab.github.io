@@ -27,27 +27,34 @@ int main(){
 
 ```
 ####Results:
-x1 - -1             x2 - 5<br/>
-x1 - 9              x2 - -15<br/>
-x1 - -31            x2 - 65<br/>
-x1 - 129            x2 - -255<br/>
-x1 - -511           x2 - 1025<br/>
-x1 - 2049           x2 - -4095<br/>
-x1 - -8191          x2 - 16385<br/>
-x1 - 32769          x2 - -65535<br/>
-x1 - -131071        x2 - 262145<br/>
-x1 - 524289         x2 - -1048575<br/>
-x1 - -2097151       x2 - 4194305<br/>
-x1 - 8388609        x2 - -16777215<br/>
-x1 - -33554431      x2 - 67108865<br/>
-x1 - 134217729      x2 - -268435455<br/>
-x1 - -536870911     x2 - 1073741825<br/>
-x1 - -2147483647    x2 - 1<br/>
-x1 - 1              x2 - 1<br/>
-x1 - 1              x2 - 1<br/>
-x1 - 1              x2 - 1<br/>
-x1 - 1              x2 - 1<br/>
+x1 = -1                     x2 = 5                      x3 = -7.26705e-40<br/>      
+x1 = 9                      x2 = -15                    x3 = 2.90044e-39<br/>
+x1 = -31                    x2 = 65                     x3 = -1.16082e-38<br/>
+x1 = 129                    x2 = -255                   x3 = 4.64262e-38<br/>
+x1 = -511                   x2 = 1025                   x3 = -1.85711e-37<br/>
+x1 = 2049                   x2 = -4095                  x3 = 7.42839e-37<br/>
+x1 = -8191                  x2 = 16385                  x3 = -2.97136e-36<br/>
+x1 = 32769                  x2 = -65535                 x3 = 1.18854e-35<br/>
+x1 = -131071                x2 = 262145                 x3 = -4.75418e-35<br/>
+x1 = 524289                 x2 = -1.04858e+06           x3 = 1.90167e-34<br/>
+x1 = -2.09715e+06           x2 = 4.1943e+06             x3 = -7.60668e-34<br/>
+x1 = 8.38861e+06            x2 = -1.67772e+07           x3 = 3.04267e-33<br/>
+x1 = -3.35544e+07           x2 = 6.71089e+07            x3 = -1.21707e-32<br/>
+x1 = 1.34218e+08            x2 = -2.68435e+08           x3 = 4.86828e-32<br/>
+x1 = -5.36871e+08           x2 = 1.07374e+09            x3 = -1.94731e-31<br/>
+x1 = 2.14748e+09            x2 = -4.29497e+09           x3 = 7.78924e-31<br/>
+x1 = -8.58993e+09           x2 = 1.71799e+10            x3 = -3.1157e-30<br/>
+x1 = 3.43597e+10            x2 = -6.87195e+10           x3 = 1.24628e-29<br/>
+x1 = -1.37439e+11           x2 = 2.74878e+11            x3 = -4.98512e-29<br/>
+x1 = 5.49756e+11            x2 = -1.09951e+12           x3 = 1.99405e-28<br/>
 
+##Conclusion:
+As we analyze the results we observe that the method diverged. This reusults are due to the fact that the matrix does <br/>
+not respect the conditions of the method.
+<ul>
+    <li>Matrix is not symmetric positive-definite.</li>
+    <li>Matrix is  not strictly or irreducibly diagonally dominant.</li>
+</ul>
 ###Matrices 2
 
 ####(C++ code of the problem)
@@ -60,27 +67,21 @@ using namespace std;
 int main(void)
 {
     float a[10][10], b[10], x[10], y[10];
-    int n = 3;
+    int n = 2;
     int iterations = 20;
 
     //initial values
     x[0] = x[1] = x[2] = 0;
 
     //values for the matrix a
-    a[0][0] = 3;
-    a[0][1] = -0.1;
-    a[0][2] = -0.2;
-    a[1][0] = 0.1;
-    a[1][1] = 7;
-    a[1][2] = -0.3;
-    a[2][0] = 0.3;
-    a[2][1] = -0.2;
-    a[2][2] = 10;
+    a[0][0] = 1;
+    a[0][1] = -2;
+    a[1][0] = 2;
+    a[1][1] = 1;
 
     //values from the rightpart of equal sign
-    b[0] = 7.85;
-    b[1] = -19.3;
-    b[2] = 71.4;
+    b[0] = -1;
+    b[1] = 3;
 
     while (iterations > 0)
     {
@@ -128,7 +129,9 @@ x1 = 3                  x2 = -2.5                x3 = 7<br/>
 x1 = 3                  x2 = -2.5                x3 = 7<br/> 
 
 ##Conclusion:
-By performing this laboratory work we found out some facts.<br/>
+The second method converges, and it does it rapidly because the matrix satisfies the requirments. <br/>
+As we see, a few iterations were sufficient to find out which is the solution.<br/>
+Moreover, by analyzing information sources, we proved the method`s characteristics:
 Guass-Seidel method is one of the common methods employed for solving power flow equations.
 <ul>Advantages:
     <li>Simplicity in technique</li>

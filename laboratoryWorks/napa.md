@@ -5,7 +5,7 @@ title: APA
 
 #Laboratory work Nr. 1
 
-###Merge Sort Method
+<span style="color:#330033">###Merge Sort Method</span>
 ```
 def mergeSort(_list):
     print("Splitting ",_list)
@@ -46,7 +46,7 @@ print(list)
 
 ```
 
-####Results:
+<span style="color:#330033">####Results</span>
 Splitting  [32, 211, 93, 14, 56, 32, 29, 43, 20]<br/>
 Splitting  [32, 211, 93, 14]<br/>
 Splitting  [32, 211]<br/>
@@ -83,7 +83,7 @@ Merging  [20, 29, 32, 43, 56]<br/>
 Merging  [14, 20, 29, 32, 32, 43, 56, 93, 211]<br/>
 [14, 20, 29, 32, 32, 43, 56, 93, 211]<br/><br/>
 
-###Quick Sort Method
+<span style="color:#330033">###Quick Sort Method</span>
 ```
 def quickSort(_list):
    quickSortHelper(_list,0,len(_list)-1)
@@ -131,7 +131,7 @@ print(list)
 
 ```
 
-####Results:
+<span style="color:#330033">####Results</span>
 [14, 20, 29, 32, 32, 43, 56, 93, 211]<br/>
 
 ##Conclusion:

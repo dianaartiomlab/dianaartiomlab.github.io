@@ -3,6 +3,7 @@ layout: default
 title: Numerical Analysis
 ---
 
+<<<<<<< HEAD
 
 ##Laboratory work No. 4
 ###Problem 1: 1 Matrices 1
@@ -89,18 +90,223 @@ int main(void)
             y[i] = (b[i] / a[i][i]);
             for (j = 0; j < n; j++)
             {
+=======
+##Laboratory work No. 4
+###Matrices 1
+
+####(C++ code of the problem)
+
+```
+#include<iostream>
+
+using namespace std;
+
+int main(void){
+    float a[10][10], b[10], x[10], y[10];
+    int n = 3;
+    int iterations = 20;
+
+    //initial values
+    x[0] = x[1] = x[2] = 0;
+    //values for the matrix a
+    a[0][0] = 1;
+    a[0][1] = -2;
+    a[1][0] = 2;
+    a[1][1] = 1;
+
+
+    //values from the rightpart of equal sign
+    b[0] = -1;
+    b[1] = 3;
+
+    while (iterations > 0){
+        for (int i = 0; i < n; i++){
+            y[i] = (b[i] / a[i][i]);
+            for (int j = 0; j < n; j++){
                 if (j == i)
                     continue;
                 y[i] = y[i] - ((a[i][j] / a[i][i]) * x[j]);
                 x[i] = y[i];
             }
-            cout << "x" << i+1 << " = " << y[i] << "\t" ;
+            cout << "x" << i+1 << " = " << y[i] << "\t\t\t";
         }
         cout << "\n";
         iterations--;
     }
     return 0;
 }
+
+```
+####Results:
+<table>
+    <tr>
+        <th>x1</th>
+        <th>x2</th>
+        <th>x3</th>
+    </tr>
+    <tr>
+        <td>-1 </td>
+        <td>5</td>
+        <td>-7.26705e-40</td>
+    <tr>
+        <td>9 </td>
+        <td>-15 </td>
+        <td>.90044e-39</td>
+    </tr>
+    <tr>
+        <td>-31 </td>
+        <td>65</td>
+        <td>-1.16082e-38</td>
+    </tr>
+    <tr>
+        <td>129</td>
+        <td>-255</td>
+        <td>4.64262e-38</td>
+    </tr>
+    <tr>
+        <td>-511</td>
+        <td>1025</td>
+        <td>-1.85711e-37</td>
+    </tr>
+    <tr>
+        <td>2049</td>
+        <td>-4095</td>
+        <td>7.42839e-37</td>
+    </tr>
+    <tr>
+        <td>-8191</td>
+        <td>16385</td>
+        <td>-2.97136e-36</td>
+    </tr>
+    <tr>
+        <td>32769</td>
+        <td>-65535</td>
+        <td>1.18854e-35</td>
+    </tr>
+    <tr>
+        <td>-131071 </td>
+        <td>262145</td>
+        <td>-4.75418e-35</td>
+    </tr>
+    <tr>
+        <td>524289</td>
+        <td>-1.04858e+06</td>
+        <td>1.90167e-34</td>
+    </tr>
+    <tr>
+        <td>-2.09715e+06 </td>
+        <td>4.1943e+06</td>
+        <td>-7.60668e-34</td>
+    </tr>
+    <tr>
+        <td>8.38861e+06 </td>
+        <td>-1.67772e+07 </td>
+        <td>3.04267e-33</td>
+    </tr>
+    <tr>
+        <td>-3.35544e+07</td>
+        <td>6.71089e+07</td>
+        <td>-1.21707e-32</td>
+    </tr>
+    <tr>
+        <td>1.34218e+08</td>
+        <td>-2.68435e+08 </td>
+        <td>4.86828e-32</td>
+    </tr>
+    <tr>
+        <td>-5.36871e+08 </td>
+        <td>1.07374e+09 </td>
+        <td>-1.94731e-31</td>
+    </tr>
+    <tr>
+        <td>2.14748e+09 </td>
+        <td>-4.29497e+09/td>
+        <td>7.78924e-31</td>
+    </tr>
+    <tr>
+        <td>-8.58993e+09  </td>
+        <td>1.71799e+10 </td>
+        <td>-3.1157e-30</td>
+    </tr>
+    <tr>
+        <td>3.43597e+10 </td>
+        <td>-6.87195e+10</td>
+        <td>1.24628e-2</td>
+    </tr>
+    <tr>
+        <td>-1.37439e+11</td>
+        <td>2.74878e+11</td>
+        <td>-4.98512e-29</td>
+    </tr>
+    <tr>
+        <td>5.49756e+11 </td>
+        <td>-1.09951e+12 </td>
+        <td>1.99405e-28</td>
+    </tr>
+</table> 
+
+##Conclusion:
+As we analyze the results we observe that the method diverged. This reusults are due to the fact that the matrix does <br/>
+not respect the conditions of the method.
+<ul>
+    <li>Matrix is not symmetric positive-definite.</li>
+    <li>Matrix is  not strictly or irreducibly diagonally dominant.</li>
+</ul>
+###Matrices 2
+
+####(C++ code of the problem)
+
+```
+#include<iostream>
+
+using namespace std;
+
+int main(void){
+    float a[10][10], b[10], x[10], y[10];
+    int n = 3;
+    int iterations = 9;
+
+    //initial values
+    x[0] = x[1] = x[2] = 0;
+
+    //values for the matrix a
+    a[0][0] = 3;
+    a[0][1] = -0.1;
+    a[0][2] = -0.2;
+    a[1][0] = 0.1;
+    a[1][1] = 7;
+    a[1][2] = -0.3;
+    a[2][0] = 0.3;
+    a[2][1] = -0.2;
+    a[2][2] = 10;
+
+    //values from the rightpart of equal sign
+    b[0] = 7.85;
+    b[1] = -19.3;
+    b[2] = 71.4;
+
+    while (iterations > 0){
+        for (int i = 0; i < n; i++){
+            y[i] = (b[i] / a[i][i]);
+            for (int j = 0; j < n; j++){
+>>>>>>> 45dba0cb08bfc0e449af834a3f0b27d263e67615
+                if (j == i)
+                    continue;
+                y[i] = y[i] - ((a[i][j] / a[i][i]) * x[j]);
+                x[i] = y[i];
+            }
+<<<<<<< HEAD
+            cout << "x" << i+1 << " = " << y[i] << "\t" ;
+=======
+            cout << "x" << i+1 << " = " << y[i] << "\t\t\t";
+>>>>>>> 45dba0cb08bfc0e449af834a3f0b27d263e67615
+        }
+        cout << "\n";
+        iterations--;
+    }
+    return 0;
+}
+<<<<<<< HEAD
 ```
 ####Results:
 x1 = 0.0666667  x2 = 1.12048    x3 = -1.90959<br/>
@@ -116,6 +322,80 @@ x1 = -0.281196  x2 = -4.4161    x3 = -2.00989<br/>
 
 ###Conclusion:
 Whatever. The deadline is on Sunday.
+=======
+
+```
+
+###Results: 
+<table>
+    <tr>
+        <th>x1</th>
+        <th>x2</th>
+        <th>x3</th>
+    </tr>
+    <tr>
+        <td>2.61667 </td>
+        <td>-2.79452</td>
+        <td>7.00561</td>
+    </tr>
+    <tr>
+        <td>2.99056 </td>
+        <td>-2.49962 </td>
+        <td>7.00029</td>
+    </tr>
+    <tr>
+        <td>3.00003</td>
+        <td>-2.49999</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>-2.5</td>
+        <td>7</td>
+    </tr>
+</table>
+
+##Conclusion:
+The second method converges, and it does it rapidly because the matrix satisfies the requirments. <br/>
+As we see, a few iterations were sufficient to find out which is the solution.<br/>
+Moreover, by analyzing information sources, we proved the method`s characteristics:
+Guass-Seidel method is one of the common methods employed for solving power flow equations.
+<ul>Advantages:
+    <li>Simplicity in technique</li>
+    <li>Small computer memory requirement</li>
+    <li>Less computational time per iteration</li>
+</ul>
+<ul>Disadvantages:
+    <li>Slow rate of convergence resulting in larger number of iterations</li>
+    <li>Increase in the number of iterations with increase in the number of buses</li>
+
+<hr>
+>>>>>>> 45dba0cb08bfc0e449af834a3f0b27d263e67615
 
 ##Laboratory work No. 3
 ###Problem 1: Root finding
@@ -222,6 +502,59 @@ Number of iterations:  1
 ###Conclusion:
 By implementing each rootfinding method we can analyze their behaviour and the way they converge to the real root.Therefore we see that the rate of convergence of Newton , simplified Newton and secant method is greater. Here are the results for f(x) in estimated root . We see that newton’s method gave the best approximation for the real root , because it is closer to 0.0 than others.
 
+###Problem 2: Root Finding Part II
+
+<div class="custom-image"><img src="https://40.media.tumblr.com/63817203ae0facae42cf9e75c6249379/tumblr_nwfd5yPqDO1udztn8o1_1280.png" /></div>
+<div class="custom-image"><img src="https://41.media.tumblr.com/cce850f70b15772f9c714b8952a5a4d9/tumblr_nwfd5qatoJ1udztn8o1_1280.png" /></div>
+<div class="custom-image"><img src="https://36.media.tumblr.com/bf904883ee549416ddf90d32a9020c1b/tumblr_nwfd5gBmD31udztn8o1_1280.png" /></div>
+
+
+
+###Problem 3: Fixed-point iteration method
+
+
+```
+import math
+
+def func1(x):
+    return 2 * math.exp(-x)
+
+def func2(x):
+    return 0.9 / ( 1 + x ** 4)
+
+def func3(x):
+    return 6.28 + math.sin(x)
+
+def fixed(f, x0, tol = 0.000001, max_it=1000):
+    n=1
+    while n <= max_it:
+        x1 = f(x0)
+        if (abs(x1 - x0) < tol):
+            print("Root is =", x1)
+            print("Number of iterations =", n)
+            return
+        else:
+            x0 = x1
+            n = n + 1
+
+```
+####Results:
+
+Fixed: 
+<br />
+First function: <br />
+('Root is =', 0.8526051018601054)<br />
+('Number of iterations =', 74)<br />
+Second function:<br /> 
+('Root is =', 0.7141895972112392)<br />
+('Number of iterations =', 59)<br />
+Third funtion: <br />
+('Root is =', 6.015529419935787)<br />
+('Number of iterations =', 388)<br />
+
+###Conclusion: 
+As we`ve seen, the greatest advantage of this method is that it converges rapidly and, it also can be easily implemented. But, when applying it one should be aware that it diverges if the absolute value of the derivative of g(x) with respect to x is greater than 1 for all x in the interval containing the root. Also, if the equation has more than 1 root, and f(x) is continuous then this method may miss one or more roots.
+<br />
 
 ##Laboratory work No. 2
 ###Problem 1: Root finding

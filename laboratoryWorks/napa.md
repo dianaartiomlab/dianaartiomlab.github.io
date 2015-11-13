@@ -141,8 +141,6 @@ By performing this laboratory work we learned how to work with mergesort and qui
 
 Quicksort is also more complicated than mergesort, especially if you want to write a really solid implementation, and so if you're aiming for simplicity and maintainability, merge sort becomes a promising alternative with very little performance loss.
 
-```
-
 #Laboratory work Nr. 1
 
 ###Ex.1

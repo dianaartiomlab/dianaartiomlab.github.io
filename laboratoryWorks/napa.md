@@ -134,10 +134,14 @@ print(list)
 ####Results:
 [14, 20, 29, 32, 32, 43, 56, 93, 211]<br/>
 
+<div class="custom-image"><img src="http://www.csee.umbc.edu/~chang/cs202.s98/lectures/lec06/mvq.gif" /></div>
+
 ##Conclusion:
 By performing this laboratory work we learned how to work with mergesort and quicksort algorithms. What can be said is that while quicksort is often a better choice than merge sort, there are definitely times when merge sort is thereotically a better choice. The most obvious time is when it's extremely important that your algorithm run faster than O(n^2). Quicksort is usually faster than this, but given the theoretical worst possible input, it could run in O(n^2), which is worse than the worst possible merge sort.
 
 Quicksort is also more complicated than mergesort, especially if you want to write a really solid implementation, and so if you're aiming for simplicity and maintainability, merge sort becomes a promising alternative with very little performance loss.
+
+```
 
 #Laboratory work Nr. 1
 

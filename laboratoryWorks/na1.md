@@ -2,95 +2,6 @@
 layout: default
 title: Numerical Analysis
 ---
-
-<<<<<<< HEAD
-
-##Laboratory work No. 4
-###Problem 1: 1 Matrices 1
-Show that the Gauss-Seidel method diverges when taking the roots to be 0.
-x1 − 2x2 = −1                                     (1)
-2x1 + x2 = 3                                      (2)
-
-####Code of the problem(Written in C++)
-```
-#include <iostream>
-
-using namespace std;
-
-int main(){
-int x1, x2;
-x1 = x2 = 0;
-for(int i = 0; i < 20; i++){
-    x1 = 2 * x2 - 1;
-    x2 = 3 - 2 * x1;
-    cout << "x1 - " << x1 << "\t\t\t\t\t\t"<< "x2 - "<< x2 << endl;
-}
- 
-return 0;
-}
-```
-####Results:
-x1 - -1                                     x2 - 5<br/>
-x1 - 9                                      x2 - -15<br/>
-x1 - -31                                    x2 - 65<br/>
-x1 - 129                                    x2 - -255<br/>
-x1 - -511                                   x2 - 1025<br/>
-x1 - 2049                                   x2 - -4095<br/>
-x1 - -8191                                  x2 - 16385<br/>
-x1 - 32769                                  x2 - -65535<br/>
-x1 - -131071                                x2 - 262145<br/>
-x1 - 524289                                 x2 - -1048575<br/>
-x1 - -2097151                               x2 - 4194305<br/>
-x1 - 8388609                                x2 - -16777215<br/>
-x1 - -33554431                              x2 - 67108865<br/>
-x1 - 134217729                              x2 - -268435455<br/>
-x1 - -536870911                             x2 - 1073741825<br/>
-x1 - -2147483647                            x2 - 1<br/>
-x1 - 1                                      x2 - 1<br/>
-x1 - 1                                      x2 - 1<br/>
-x1 - 1                                      x2 - 1<br/>
-x1 - 1                                      x2 - 1<br/>
-
-###Conclusion:
-Whatever. The deadline is on Sunday.
-
-###Problem 1: 1 Matrices 2
-Determine the solutions of the system:
-3x1 − 0.1x2 − 0.2x3 = 7.85                              (3)
-0.1x1 + 7x2 − 0.3x3 = −19.3                             (4)
-0.3x1 − 0.2x2 + 10x3 = 71.4                             (5)
-
-####Code of the problem(Written in C++)
-```
-#include<iostream>
-#include<conio.h>
- 
-using namespace std;
- 
-int main(void)
-{
-    float a[10][10], b[10], x[10], y[10];
-    int n = 3, iterations = 0, i = 0, j = 0;
-
-    //matrix values corresponding to the equations
-    a[0][0] = 3;    a[0][1] = -0.1;  a[0][2] = -0.2;
-    a[1][0] = 0.1;  a[1][1] = 7;     a[1][2] = -19.3;
-    a[2][0] = 0.3;  a[2][1] = -0.2;  a[2][2] = 10;
-    
-    // Values to the right side of equation
-    b[1] = 7.85;    b[2] = -19.3;    b[3] = 71.4;
-    
-    //initial values
-    x[0] = 0; x[1] = 2; x[3] = 4;
-    iterations = 10;
-    while (iterations > 0)
-    {
-        for (i = 0; i < n; i++)
-        {
-            y[i] = (b[i] / a[i][i]);
-            for (j = 0; j < n; j++)
-            {
-=======
 ##Laboratory work No. 4
 ###Matrices 1
 
@@ -289,24 +200,18 @@ int main(void){
         for (int i = 0; i < n; i++){
             y[i] = (b[i] / a[i][i]);
             for (int j = 0; j < n; j++){
->>>>>>> 45dba0cb08bfc0e449af834a3f0b27d263e67615
                 if (j == i)
                     continue;
                 y[i] = y[i] - ((a[i][j] / a[i][i]) * x[j]);
                 x[i] = y[i];
             }
-<<<<<<< HEAD
-            cout << "x" << i+1 << " = " << y[i] << "\t" ;
-=======
             cout << "x" << i+1 << " = " << y[i] << "\t\t\t";
->>>>>>> 45dba0cb08bfc0e449af834a3f0b27d263e67615
         }
         cout << "\n";
         iterations--;
     }
     return 0;
 }
-<<<<<<< HEAD
 ```
 ####Results:
 x1 = 0.0666667  x2 = 1.12048    x3 = -1.90959<br/>
@@ -322,7 +227,6 @@ x1 = -0.281196  x2 = -4.4161    x3 = -2.00989<br/>
 
 ###Conclusion:
 Whatever. The deadline is on Sunday.
-=======
 
 ```
 
@@ -395,7 +299,6 @@ Guass-Seidel method is one of the common methods employed for solving power flow
     <li>Increase in the number of iterations with increase in the number of buses</li>
 
 <hr>
->>>>>>> 45dba0cb08bfc0e449af834a3f0b27d263e67615
 
 ##Laboratory work No. 3
 ###Problem 1: Root finding

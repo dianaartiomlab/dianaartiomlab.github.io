@@ -8,6 +8,7 @@ title: Numerical Analysis
 ####(Python code of the problem)
 The problem was solved using LAGRANGE priciple.
 The values of x0, x1 and x2 as the values of y0, y1 and y2 are changed for points a), b) and c). The images are shown below the code, for each of a), b) and c).
+
 ```
 import matplotlib.pyplot as plt
 import numpy as np
@@ -42,6 +43,7 @@ print (_y)
 plt.plot(_y)
 plt.show()
 ```
+
 ###Results:
 ####a)
 <div class="custom-image"><img src="https://40.media.tumblr.com/282e10154b3f8f810126c501ec003e1a/tumblr_nyl0pdgUpZ1udztn8o1_1280.png" /></div>
@@ -94,11 +96,11 @@ plt.show()
 ```
 ###Results:
 ####a)
-<div class="custom-image"><img src="https://36.media.tumblr.com/b40542a1f3050fee38e74d27cb7be2b6/tumblr_nyl0tevYi51udztn8o1_1280.png" /></div>
+<div class="custom-image"><img src="https://41.media.tumblr.com/b40542a1f3050fee38e74d27cb7be2b6/tumblr_nyl19nLot11udztn8o1_1280.png" /></div>
 ####b)
 <div class="custom-image"><img src="https://40.media.tumblr.com/0b7eef207183e76a53d97353911587e7/tumblr_nyl0urd9DU1udztn8o1_1280.png" /></div>
 ####c)
-<div class="custom-image"><img src="https://41.media.tumblr.com/baa13f94427a61ba5c90937af5825ad9/tumblr_nyl0r0V6V51udztn8o1_1280.png" /></div>
+<div class="custom-image"><img src="https://41.media.tumblr.com/a8c98c19c6fc5c4f55f17ad1c4dd5b59/tumblr_nyl1b0akN31udztn8o1_1280.png" /></div>
 
 ###Splines
 

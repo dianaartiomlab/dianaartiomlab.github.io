@@ -51,6 +51,8 @@ plt.show()
 <div class="custom-image"><img src="https://41.media.tumblr.com/e6ebc41f2bd7cd46db7979278f87cab7/tumblr_nyl0qe8bnN1udztn8o1_1280.png" /></div>
 ####c)
 <div class="custom-image"><img src="https://41.media.tumblr.com/baa13f94427a61ba5c90937af5825ad9/tumblr_nyl0r0V6V51udztn8o1_1280.png" /></div>
+Using Lagrangian interpolation, we were allowe to simulate the graph of the function. Even if we obtained some results, Lagrange interpolation is essentially NEVER a good choice for interpolation, because in reality, the obrained graph cand be far from real function graph. Therefore, is a good way to INTRODUCE ideas of interpolation, and sometimes to prove some simple results. But for precision you need something more.
+
 ###Cubic
 
 ####(Python code of the problem)
@@ -105,7 +107,8 @@ plt.show()
 ###Splines
 
 ####(Python code of the problem)
-First of all, I used a 4x4 system equation solver. I obtained the values for x1, x2, x3 and x4. By using the formula, I evaluated the function and obtainet the result of the function in point 27. The code of the last part can be seen below.
+First of all, I used a 4x4 system equation solver. I obtained the values for x1, x2, x3 and x4. By using the formula, I evaluated the function and obtained the result of the function in point 27. The code of the last part can be seen below.
+
 ```
 x1 = 14.263
 x2 = -0.351354166667
@@ -173,7 +176,7 @@ printFunction(trapezoidal(f, 0.0, 0.8, n), n)
 <div class="custom-image"><img src="https://40.media.tumblr.com/66a7f00aac958c128b8ccb99997bfc31/tumblr_nyl0zvItJU1udztn8o1_400.png" /></div>
 
 ##Conslcusion:
-
+The trapezoidal rule is not as accurate as Simpson's Rule when the underlying function is smooth, because Simpson's rule uses quadratic approximations instead of linear approximations. The formula is usually given in the case of an odd number of equally spaced points. 
 
 ##Laboratory work No. 4
 ###Matrices 1

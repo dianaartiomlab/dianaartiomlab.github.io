@@ -2,6 +2,177 @@
 layout: default
 title: Numerical Analysis
 ---
+##Laboratory work No. 5
+###Quadratic
+
+####(Python code of the problem)
+The problem was solved using LAGRANGE priciple.
+The values of x0, x1 and x2 as the values of y0, y1 and y2 are changed for points a), b) and c). The images are shown below the code, for each of a), b) and c).
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+pi = 3.14
+
+_x0 = 3
+_y0 = 1.0986123
+
+_x1 = 4
+_y1 = 1.3862944
+
+_x2 = 5
+_y2 = 1.6094379
+
+_x = np.arange(-500, 500, 0.1);
+
+
+
+def L_function(x, x1, x2, x0, y0, y1, y2):
+    L20 = ((x - x1) * (x - x2)) / ((x0 - x1) * (x0 - x2))
+    L21 = ((x - x0) * (x - x2)) / ((x1 - x0) * (x1 - x2))
+    L22 = ((x - x0) * (x - x1)) / ((x2 - x0) * (x2 - x1))
+
+    L = y0 * L20 + y1 * L21 + y2 * L22
+    return L
+
+_y = L_function(_x, _x1, _x2, _x0, _y0, _y1, _y2)
+print (_y)
+
+
+plt.plot(_y)
+plt.show()
+```
+###Results:
+####a)
+<div class="custom-image"><img src="https://40.media.tumblr.com/282e10154b3f8f810126c501ec003e1a/tumblr_nyl0pdgUpZ1udztn8o1_1280.png" /></div>
+####b)
+<div class="custom-image"><img src="https://41.media.tumblr.com/e6ebc41f2bd7cd46db7979278f87cab7/tumblr_nyl0qe8bnN1udztn8o1_1280.png" /></div>
+####c)
+<div class="custom-image"><img src="https://41.media.tumblr.com/baa13f94427a61ba5c90937af5825ad9/tumblr_nyl0r0V6V51udztn8o1_1280.png" /></div>
+###Cubic
+
+####(Python code of the problem)
+Same principle as in exercise Nr. 1
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+pi = 3.14
+
+_x0 = 1
+_y0 = 0
+
+_x1 = 3
+_y1 = 1.0986123
+
+_x2 = 4
+_y2 = 1.3862944
+
+_x3 = 6
+_y3 = 1.7917595
+
+_x = np.arange(-50, 50, 0.1);
+
+
+
+def L_function(x, x1, x2, x0, x3, y0, y1, y2, y3):
+    L30 = ((x - x1) * (x - x2) * (x - x3)) / ((x0 - x1) * (x0 - x2) * (x0 - x3))
+    L31 = ((x - x0) * (x - x2) * (x - x3)) / ((x1 - x0) * (x1 - x2) * (x1 - x3))
+    L32 = ((x - x0) * (x - x1) * (x - x3)) / ((x2 - x0) * (x2 - x1) * (x2 - x3))
+    L33 = ((x - x0) * (x - x1) * (x - x2)) / ((x3 - x0) * (x3 - x1) * (x3 - x2))
+
+    L = y0 * L30 + y1 * L31 + y2 * L32 + y3 * L33
+    return L
+
+_y = L_function(_x, _x1, _x2, _x0, _x3, _y0, _y1, _y2, _y3)
+print (_y)
+
+
+plt.plot(_y)
+plt.show()
+```
+###Results:
+####a)
+<div class="custom-image"><img src="https://36.media.tumblr.com/b40542a1f3050fee38e74d27cb7be2b6/tumblr_nyl0tevYi51udztn8o1_1280.png" /></div>
+####b)
+<div class="custom-image"><img src="https://40.media.tumblr.com/0b7eef207183e76a53d97353911587e7/tumblr_nyl0urd9DU1udztn8o1_1280.png" /></div>
+####c)
+<div class="custom-image"><img src="https://41.media.tumblr.com/baa13f94427a61ba5c90937af5825ad9/tumblr_nyl0r0V6V51udztn8o1_1280.png" /></div>
+
+###Splines
+
+####(Python code of the problem)
+First of all, I used a 4x4 system equation solver. I obtained the values for x1, x2, x3 and x4. By using the formula, I evaluated the function and obtainet the result of the function in point 27. The code of the last part can be seen below.
+```
+x1 = 14.263
+x2 = -0.351354166667
+x3 = 0.0054140625
+x4 = -0.0000384114583333
+
+x = 27
+
+f27 = x1 + x2 * x + x3 * (x ** 2) + x4 * (x ** 3)
+
+print f27
+```
+###Results:
+<div class="custom-image"><img src="https://40.media.tumblr.com/3adca4b9386877e7f82e446491cdb6f2/tumblr_nyl0vgoil81udztn8o1_250.png" /></div>
+
+###Integrals
+
+####(Python code of the problem using both methods)
+```
+from math import *
+from pylab import *
+
+def f(x):
+    return 0.2 + 25 * x - 200 * (x **2) + 675 * (x ** 3) - 900 * (x ** 4) + 400 * (x ** 5)
+
+def simpson(f, a, b, n):
+    h=(b-a)/n
+    k=0.0
+    x=a + h
+    for i in range(1,n/2 + 1):
+        k += 4*f(x)
+        x += 2*h
+
+    x = a + 2*h
+    for i in range(1,n/2):
+        k += 2*f(x)
+        x += 2*h
+    return (h/3)*(f(a)+f(b)+k)
+
+def trapezoidal(f, a, b, n):
+    h = float(b - a) / n
+    s = 0.0
+    s += f(a)/2.0
+    for i in range(1, n):
+        s += f(a + i*h)
+    s += f(b)/2.0
+    return s * h
+
+n = 2
+
+def printFunction(x, n):
+    print "   n       |     Value"
+    for i in range(10):
+    
+        print "n = ", n, "      ", x
+        n = n * 2
+
+print " Simpson method: "
+printFunction(simpson(f, 0.0, 0.8, n), n)
+
+print " Trapezoidal method: "
+printFunction(trapezoidal(f, 0.0, 0.8, n), n)
+
+```
+<div class="custom-image"><img src="https://40.media.tumblr.com/66a7f00aac958c128b8ccb99997bfc31/tumblr_nyl0zvItJU1udztn8o1_400.png" /></div>
+
+##Conslcusion:
+
+
 ##Laboratory work No. 4
 ###Matrices 1
 

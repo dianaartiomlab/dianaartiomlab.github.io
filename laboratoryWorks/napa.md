@@ -13,6 +13,7 @@ The same principle is represented in the following image:
 <div class="custom-image"><img src="https://www.tumblr.com/blog/ggitrn#" /></div>
 
 Next, follows the code implementation:
+
 ```
 parent = dict()
 rank = dict()
@@ -73,6 +74,7 @@ Kruskal's algorithm is pretty simple. Intuitively, it collects the cheapest elig
 The Floyd–Warshall algorithm is an algorithm for finding shortest paths in a weighted graph with positive or negative edge weights (but with no negative cycles). A single execution of the algorithm will find the lengths (summed weights) of the shortest paths between all pairs of vertices, though it does not return details of the paths themselves. 
 
 ###Python code of the program:
+
 ```
 import math
 

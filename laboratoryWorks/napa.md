@@ -3,6 +3,125 @@ layout: default
 title: APA
 ---
 
+#Laboratory work Nr. 3
+
+### Kruskal Algorithm
+Kruskal's algorithm is a minimum-spanning-tree algorithm which finds an edge of the least possible weight that connects any two trees in the forest. It is a greedy algorithm in graph theory as it finds a minimum spanning tree for a connected weighted graph adding increasing cost arcs at each step. This means it finds a subset of the edges that forms a tree that includes every vertex, where the total weight of all the edges in the tree is minimized. If the graph is not connected, then it finds a minimum spanning forest (a minimum spanning tree for each connected component).
+<br />
+The same principle is represented in the following image:
+
+<div class="custom-image"><img src="https://www.tumblr.com/blog/ggitrn#" /></div>
+
+Next, follows the code implementation:
+```
+parent = dict()
+rank = dict()
+
+def make_set(vertice):
+    parent[vertice] = vertice
+    rank[vertice] = 0
+
+def find(vertice):
+    if parent[vertice] != vertice:
+        parent[vertice] = find(parent[vertice])
+    return parent[vertice]
+
+def union(vertice1, vertice2):
+    root1 = find(vertice1)
+    root2 = find(vertice2)
+    if root1 != root2:
+        if rank[root1] > rank[root2]:
+            parent[root2] = root1
+        else:
+            parent[root1] = root2
+            if rank[root1] == rank[root2]: rank[root2] += 1
+
+def kruskal(graph):
+    for vertice in graph['vertices']:
+        make_set(vertice)
+
+    minimum_spanning_tree = set()
+    edges = list(graph['edges'])
+    edges.sort()
+    for edge in edges:
+        weight, vertice1, vertice2 = edge
+        if find(vertice1) != find(vertice2):
+            union(vertice1, vertice2)
+            minimum_spanning_tree.add(edge)
+    return minimum_spanning_tree
+
+graph = {
+        'vertices': ['A', 'B', 'C', 'D', 'E', 'F'],
+        'edges': set([
+            (1, 'A', 'B'),
+            (5, 'A', 'C'),
+            (3, 'A', 'D'),
+            (4, 'B', 'C'),
+            (2, 'B', 'D'),
+            (1, 'C', 'D'),
+            ])
+        }
+
+print kruskal(graph)
+
+```
+
+##Conlusion:
+Kruskal's algorithm is pretty simple. Intuitively, it collects the cheapest eligible edges which bolsters the belief that the "minimum" part in the caption (Minimum Spanning Tree) may well be justified. The algorithm avoids loops maintaining at every stage a forest of a finite number of trees. The number of trees can't grow indefinitely so that one may expect that, with time, some trees will be bridged into a single tree until only one tree remains. 
+
+###Floyd Algorithm
+The Floyd–Warshall algorithm is an algorithm for finding shortest paths in a weighted graph with positive or negative edge weights (but with no negative cycles). A single execution of the algorithm will find the lengths (summed weights) of the shortest paths between all pairs of vertices, though it does not return details of the paths themselves. 
+
+###Python code of the program:
+```
+import math
+
+
+def printSolution(distGraph):
+    string = "inf"
+    nodes =distGraph.keys()
+    for n in nodes:
+        print "\t%6s"%(n),
+    print " "
+    for i in nodes:
+        print"%s"%(i),
+        for j in nodes:
+            if distGraph[i][j] == INF:
+                print "%10s"%(string),
+            else:
+                print "%10s"%(distGraph[i][j]),
+        print" "
+
+def floydWarshall(graph):
+    nodes = graph.keys()
+    distance = {}
+    for n in nodes:
+        distance[n] = {}
+        for k in nodes:
+            distance[n][k] = graph[n][k]
+    for k in nodes:
+        for i in nodes:
+            for j in nodes:
+                if distance[i][k] + distance[k][j] < distance[i][j]:
+                    distance[i][j] = distance[i][k]+distance[k][j]
+    printSolution(distance)
+
+INF = 999999999
+if __name__ == '__main__':
+    graph = {'A':{'A':0,'B':6,'C':INF,'D':6,'E':7},
+             'B':{'A':INF,'B':0,'C':5,'D':INF,'E':INF},
+             'C':{'A':INF,'B':INF,'C':0,'D':9,'E':3},
+             'D':{'A':INF,'B':INF,'C':9,'D':0,'E':7},
+             'E':{'A':INF,'B':4,'C':INF,'D':INF,'E':0}
+             }
+
+floydWarshall(graph)
+```
+
+##Conclusion:
+A shortest path problem can be easily solved by using the Floyd Algorithm. It is not very complicated, talking prom implementable point of view, but is very efficient. The above program only prints the shortest distances. We can modify the solution to print the shortest paths also by storing the predecessor information in a separate 2D matrix.
+Also, the value of INF can be taken as INT_MAX from limits.h to make sure that we handle maximum possible value. When we take INF as INT_MAX, we need to change the if condition in the above program to avoid arithmatic overflow.
+
 #Laboratory work Nr. 2
 
 ###Merge Sort Method

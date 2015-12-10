@@ -5,7 +5,7 @@ title: APA
 
 #Laboratory work Nr. 3
 
-### Kruskal Algorithm
+## Kruskal Algorithm
 Kruskal's algorithm is a minimum-spanning-tree algorithm which finds an edge of the least possible weight that connects any two trees in the forest. It is a greedy algorithm in graph theory as it finds a minimum spanning tree for a connected weighted graph adding increasing cost arcs at each step. This means it finds a subset of the edges that forms a tree that includes every vertex, where the total weight of all the edges in the tree is minimized. If the graph is not connected, then it finds a minimum spanning forest (a minimum spanning tree for each connected component).
 <br />
 The same principle is represented in the following image:
@@ -67,10 +67,10 @@ print kruskal(graph)
 
 ```
 
-##Conlusion:
+###Conlusion:
 Kruskal's algorithm is pretty simple. Intuitively, it collects the cheapest eligible edges which bolsters the belief that the "minimum" part in the caption (Minimum Spanning Tree) may well be justified. The algorithm avoids loops maintaining at every stage a forest of a finite number of trees. The number of trees can't grow indefinitely so that one may expect that, with time, some trees will be bridged into a single tree until only one tree remains. 
 
-###Floyd Algorithm
+##Floyd Algorithm
 The Floyd–Warshall algorithm is an algorithm for finding shortest paths in a weighted graph with positive or negative edge weights (but with no negative cycles). A single execution of the algorithm will find the lengths (summed weights) of the shortest paths between all pairs of vertices, though it does not return details of the paths themselves. 
 
 ###Python code of the program:
@@ -118,9 +118,10 @@ if __name__ == '__main__':
              }
 
 floydWarshall(graph)
+
 ```
 
-##Conclusion:
+###Conclusion:
 A shortest path problem can be easily solved by using the Floyd Algorithm. It is not very complicated, talking prom implementable point of view, but is very efficient. The above program only prints the shortest distances. We can modify the solution to print the shortest paths also by storing the predecessor information in a separate 2D matrix.
 Also, the value of INF can be taken as INT_MAX from limits.h to make sure that we handle maximum possible value. When we take INF as INT_MAX, we need to change the if condition in the above program to avoid arithmatic overflow.
 

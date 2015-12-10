@@ -10,7 +10,7 @@ Kruskal's algorithm is a minimum-spanning-tree algorithm which finds an edge of 
 <br />
 The same principle is represented in the following image:
 
-<div class="custom-image"><img src="https://www.tumblr.com/blog/ggitrn#" /></div>
+<div class="custom-image"><img src="https://41.media.tumblr.om/caed56a7cd5ffccf3754d02e6fe4e56c/tumblr_nz5w8qe0S31udztn8o1_1280.png" /></div>
 
 Next, follows the code implementation:
 

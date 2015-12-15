@@ -10,7 +10,7 @@ Kruskal's algorithm is a minimum-spanning-tree algorithm which finds an edge of 
 <br />
 The same principle is represented in the following image:
 
-<div class="custom-image"><img src="https://41.media.tumblr.om/caed56a7cd5ffccf3754d02e6fe4e56c/tumblr_nz5w8qe0S31udztn8o1_1280.png" /></div>
+<div class="custom-image"><img src="https://41.media.tumblr.com/caed56a7cd5ffccf3754d02e6fe4e56c/tumblr_nz5w8qe0S31udztn8o1_1280.png" /></div>
 
 Next, follows the code implementation:
 
@@ -66,6 +66,8 @@ graph = {
 print kruskal(graph)
 
 ```
+
+<div class="custom-image"><img src="https://40.media.tumblr.com/35614ddb22995ee2607e852bb38aa161/tumblr_nzf2myZzyX1udztn8o1_400.png" /></div>
 
 ###Conlusion:
 Kruskal's algorithm is pretty simple. Intuitively, it collects the cheapest eligible edges which bolsters the belief that the "minimum" part in the caption (Minimum Spanning Tree) may well be justified. The algorithm avoids loops maintaining at every stage a forest of a finite number of trees. The number of trees can't grow indefinitely so that one may expect that, with time, some trees will be bridged into a single tree until only one tree remains. 

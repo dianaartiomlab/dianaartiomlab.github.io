@@ -16,28 +16,30 @@ Next, follows the code implementation:
 
 ```
 vertices=5
-spset=[True]*5
-wt=[[1000,1,3,4,1000],[1,1000,5,1000,7],[3,5,1000,6,8],[4,1000,6,1000,2],[1000,7,8,2,1000]]
+
+matrix=[[1000,1,3,4,1000],[1,1000,5,1000,7],[3,5,1000,6,8],[4,1000,6,1000,2],[1000,7,8,2,1000]]
 
 
 row=[0]
 
-for i in xrange(vertices-1):
-  row_num,col_num,min_no=-1,-1,1000
+for i in range(vertices-1):
+
+  row_num,col_num,min_no = -1,-1,1000
   for i in row:
-    temp=min(wt[row[i]])
-    if(min_no>temp):
-      min_no=temp
-      row_num=i
-      col_num=wt[i].index(temp)
+    print "this is row", row
+    temp = min(matrix[row[i]])
+
+    if(min_no > temp):
+      min_no = temp
+      row_num = i
+      col_num = matrix[i].index(temp)
   print str(min_no)+"("+str(row_num)+","+str(col_num)+")"
-  spset[col_num]=False
-  wt[col_num][row_num]=1000
-  for i in xrange(vertices):
-    wt[i][col_num]=1000
+
+  for i in range(vertices):
+    matrix[i][col_num] = 1000
   row.append(col_num)
 
-d=raw_input()
+d = raw_input()
 
 ```
 

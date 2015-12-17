@@ -15,59 +15,33 @@ The same principle is represented in the following image:
 Next, follows the code implementation:
 
 ```
-parent = dict()
-rank = dict()
+vertices=5
+spset=[True]*5
+wt=[[1000,1,3,4,1000],[1,1000,5,1000,7],[3,5,1000,6,8],[4,1000,6,1000,2],[1000,7,8,2,1000]]
 
-def make_set(vertice):
-    parent[vertice] = vertice
-    rank[vertice] = 0
 
-def find(vertice):
-    if parent[vertice] != vertice:
-        parent[vertice] = find(parent[vertice])
-    return parent[vertice]
+row=[0]
 
-def union(vertice1, vertice2):
-    root1 = find(vertice1)
-    root2 = find(vertice2)
-    if root1 != root2:
-        if rank[root1] > rank[root2]:
-            parent[root2] = root1
-        else:
-            parent[root1] = root2
-            if rank[root1] == rank[root2]: rank[root2] += 1
+for i in xrange(vertices-1):
+  row_num,col_num,min_no=-1,-1,1000
+  for i in row:
+    temp=min(wt[row[i]])
+    if(min_no>temp):
+      min_no=temp
+      row_num=i
+      col_num=wt[i].index(temp)
+  print str(min_no)+"("+str(row_num)+","+str(col_num)+")"
+  spset[col_num]=False
+  wt[col_num][row_num]=1000
+  for i in xrange(vertices):
+    wt[i][col_num]=1000
+  row.append(col_num)
 
-def kruskal(graph):
-    for vertice in graph['vertices']:
-        make_set(vertice)
-
-    minimum_spanning_tree = set()
-    edges = list(graph['edges'])
-    edges.sort()
-    for edge in edges:
-        weight, vertice1, vertice2 = edge
-        if find(vertice1) != find(vertice2):
-            union(vertice1, vertice2)
-            minimum_spanning_tree.add(edge)
-    return minimum_spanning_tree
-
-graph = {
-        'vertices': ['A', 'B', 'C', 'D', 'E', 'F'],
-        'edges': set([
-            (1, 'A', 'B'),
-            (5, 'A', 'C'),
-            (3, 'A', 'D'),
-            (4, 'B', 'C'),
-            (2, 'B', 'D'),
-            (1, 'C', 'D'),
-            ])
-        }
-
-print kruskal(graph)
+d=raw_input()
 
 ```
 
-<div class="custom-image"><img src="https://40.media.tumblr.com/35614ddb22995ee2607e852bb38aa161/tumblr_nzf2myZzyX1udztn8o1_400.png" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/1f60fe59ec6ca6ee4a6f9a316bedff3d/tumblr_nzhi781rOb1udztn8o1_400.png" /></div>
 
 ###Conlusion:
 Kruskal's algorithm is pretty simple. Intuitively, it collects the cheapest eligible edges which bolsters the belief that the "minimum" part in the caption (Minimum Spanning Tree) may well be justified. The algorithm avoids loops maintaining at every stage a forest of a finite number of trees. The number of trees can't grow indefinitely so that one may expect that, with time, some trees will be bridged into a single tree until only one tree remains. 

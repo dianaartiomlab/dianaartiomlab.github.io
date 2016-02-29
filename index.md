@@ -6,6 +6,7 @@ title: Student Data
 ## Diana Artiom FAF - 141
 
 Email: diana.artiom24@gmail.com<br />
+Contact: (+373) 684 978 91
 Computer Science student (2018), Technical University of Moldova, <br />
 Dean's office group representative,<br />
 Grants Team Leader in AIESEC Chisinau,<br />

@@ -28,16 +28,19 @@ To initialize a repository, I used the following commands:<br />
 ```$
 git init
 ```
-initializes a new repository.
+<br />
+initializes a new repository.<br />
 ```$
 echo "#midps" >> README.md
 ```
-makes the README file.
+<br />
+makes the README file.<br />
 
 ```$
 git commit -m "Initial commit"
 ```
-performs the first commit.
+<br />
+performs the first commit.<br />
 ```$
 git remote add origin https://someorigin...
 ```  
@@ -45,6 +48,7 @@ git remote add origin https://someorigin...
 <ul>
   <li>Create two branches.</li>
 </ul>
+<br />
 To create a new branch I used the command: <br />
 ```$
 git branch branch-name
@@ -71,28 +75,28 @@ git commit -m "Some message"
 ####The next following 4 tasks describe the same image(addet below the tasks), from Advanced.
 <ul>
   <li>Set a branch to track a remote origin on which you are able to push.</li>
-  Already done before, using the command 
+  Already done before, using the command <br />
   ```$
   git remote add origin blah blah...
   ```
   <br />
   <li>Reset a branch to previous commit.</li>
-  To reset the branch to the previous commit I used the command: 
+  To reset the branch to the previous commit I used the command: <br />
   ```$
   git reset --hard  3517831ce1
   ```
+  <br />
   The "number" after the --hard is the commit SHA-1 key.
   <li>Merge two branches.</li>
-  To commit two branches I used 
+  To commit two branches I used <br />
   ```$ 
   git merge branch-name-to-commit-with
-  ``` command. 
+  ``` 
+  <br />command. 
   <li>Conflict solving between 2 branches</li>
-   Opened the file, made some changes, saved it. Then used
+   Opened the file, made some changes, saved it. Then used<br />
    ```$
    git add 
-   ```
-   ```$
    git commit -m "...."
    ```
 </ul>

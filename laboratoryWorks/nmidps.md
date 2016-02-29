@@ -29,8 +29,8 @@ The next thing I`ve done was downloading the Ubuntu Server image and installing 
   <li>Create two branches.</li>
   <li>Commit two different branches.</li>
 </ul>
+####Advanced Level 
 <ul>
-  ####Advanced Level 
   <li>Set a branch to track a remote origin on which you are able to push (ex. Github, Bitbucket or custom server)</li>
   <div class="custom-image"><img src="https://40.media.tumblr.com/35bf62dfcd175242452344052c62591b/tumblr_o3arjnRIeV1udztn8o1_500.png" /></div> 
 
@@ -39,4 +39,4 @@ The next thing I`ve done was downloading the Ubuntu Server image and installing 
   <li>Merge two branches.</li>
   <li>Conflict solving between 2 branches</li>
 </ul>
-<div class="custom-image"><img src="https://40.media.tumblr.com/9eff6d8d976f6077c034b317fcce0cbf/tumblr_o35cvlgcEd1udztn8o2_1280.png" /></div> 
+<div class="custom-image"><img src="https://40.media.tumblr.com/9703a24e1d368e80b8e6c1906d4b3b04/tumblr_o3arof4qwk1udztn8o1_540.png" /></div> 

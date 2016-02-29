@@ -15,7 +15,10 @@ The next thing I`ve done was downloading the Ubuntu Server image and installing 
   <li>Connect to a server using SSH</li>
 
 <div class="custom-image"><img src="https://41.media.tumblr.com/899664a9733a7cee10d252a68e3f60df/tumblr_o33y88mR9p1uix9buo2_1280.png" /></div> 
-The next following 5 tasks describe the same image(addet below the tasks)  .
+</ul>
+<br \>
+####The next following 5 tasks describe the same image(addet below the tasks)  .
+<ul>
   <li>Run at least 2 sample programs from provided HelloWorldPrograms set</li>
   <li>Initialize and make commit using a VCS, configure it</li>
 </ul>
@@ -24,6 +27,8 @@ The next following 5 tasks describe the same image(addet below the tasks)  .
 <ul>
   <li>Create two branches.</li>
   <li>Commit two different branches.</li>
+</ul>
+<ul>
   ####Advanced Level 
   <li>Set a branch to track a remote origin on which you are able to push (ex. Github, Bitbucket or custom server)</li>
   <div class="custom-image"><img src="https://41.media.tumblr.com/fb0bfe29bcaae3c618745d40093e6b06/tumblr_o35cvlgcEd1udztn8o1_1280.png" /></div> 

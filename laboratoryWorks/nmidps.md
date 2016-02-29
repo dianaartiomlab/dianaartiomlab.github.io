@@ -32,7 +32,7 @@ The next thing I`ve done was downloading the Ubuntu Server image and installing 
 <ul>
   ####Advanced Level 
   <li>Set a branch to track a remote origin on which you are able to push (ex. Github, Bitbucket or custom server)</li>
-  <div class="custom-image"><img src="https://41.media.tumblr.com/fb0bfe29bcaae3c618745d40093e6b06/tumblr_o35cvlgcEd1udztn8o1_1280.png" /></div> 
+  <div class="custom-image"><img src="https://40.media.tumblr.com/35bf62dfcd175242452344052c62591b/tumblr_o3arjnRIeV1udztn8o1_500.png" /></div> 
 
   <li>Set a branch to track a remote origin on which you are able to push.</li>
   <li>Reset a branch to previous commit.</li>

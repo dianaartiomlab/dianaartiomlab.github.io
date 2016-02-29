@@ -147,5 +147,20 @@ git hoocks
 #####and basically I got the point:
 <div class="custom-image"><img src="https://40.media.tumblr.com/6f6502d41b0f9d7ad730d64a482db9ac/tumblr_o3at2qykMJ1udztn8o1_540.jpg" /></div> 
 <div class="custom-image"><img src="https://41.media.tumblr.com/53246bb32ba50abbd457243da1dbbf77/tumblr_o3at27M65m1udztn8o1_540.jpg" /></div> 
+Well, so i decided to learn what git cherry-pick does. It is a very powerful feature. It allows u sto choose a specific commit, to treat it as a cherry and to pick it. :D<br />
+So what have I done?<br />
+I made a new branch using the command: <br/>
+```$
+got branch branch1
+```
+<br />
+Switched to it. Made some commits and, on master, picked one of the commits I needed unsing the command: <br />
 
-Screens and images on how I done this will come soon. :)
+```$
+git cherry-pick ue89fa456
+```
+For a better understanding, see the screenshots attached.
+<div class="custom-image"><img src="https://40.media.tumblr.com/11446e3ed86fe802714619cc692063b6/tumblr_o3bn84qCEX1udztn8o2_1280.png" /></div> 
+<div class="custom-image"><img src="https://40.media.tumblr.com/cf37f77445391ab7cac98cc5416e8c97/tumblr_o3bn84qCEX1udztn8o1_1280.png" /></div> 
+
+Screens and images on how I done git rebase will come soon. :)

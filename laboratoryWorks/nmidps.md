@@ -148,19 +148,19 @@ But... Umm, I then discovered
 ```$
 git cherry-pick
 ```
-<br \>
+
 and 
 
 ```$
 git rebase
 ```
-<br \>
+
 and even more, 
 
 ```$
 git hooks
 ```
-<br \>
+
 #####and basically I got the point:
 <div class="custom-image"><img src="https://40.media.tumblr.com/6f6502d41b0f9d7ad730d64a482db9ac/tumblr_o3at2qykMJ1udztn8o1_540.jpg" /></div> 
 <div class="custom-image"><img src="https://41.media.tumblr.com/53246bb32ba50abbd457243da1dbbf77/tumblr_o3at27M65m1udztn8o1_540.jpg" /></div> 

@@ -64,21 +64,22 @@ git add .
 git commit -m "Write somethig, otherwise you`ll enter VIM and you`ll never EXIT!!!!"
 ```
 ```$
-git add push
+git push
 ```
 and that`s all.
 
-But... Umm, I then discovered 
+But... Umm, I then discovered <br \>
 
 ```$
 git cherry-pick
 ```
-
-and
+<br \>
+and <br \>
 ```$
 git rebase
 ```
-and even more, 
+<br \>
+and even more, <br \>
 ```$
 git hoocks
 ```

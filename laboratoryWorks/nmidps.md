@@ -31,7 +31,7 @@ To initialize a repository, I used the following commands:
 ```$
 git init
 ```
-<br />
+
 initializes a new repository.
 
 ```$

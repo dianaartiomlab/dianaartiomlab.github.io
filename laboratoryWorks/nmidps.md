@@ -49,14 +49,16 @@ Althought at the beginnig it seemed to be a quite difficult task, because I've n
 The second part of the laboratory work was to play with some VCS. I used git. Git - because I used it before. I thought I kinda look like this...
 <div class="custom-image"><img src="http://s.quickmeme.com/img/e0/e0d4afacba74c1b28ae4caad6f98e9d2d1689fe8e43dc1ee680214c75eb24e17.jpg" /></div> 
 because I knew how to <br \>
+<br \>
+
 ```$
 git pull
 ```
-
+<br \>
 ```$
 git clone
 ```
-
+<br \>
 ```$
 git add .
 ```
@@ -64,12 +66,14 @@ git add .
 ```$
 git commit -m "Write somethig, otherwise you`ll enter VIM and you`ll never EXIT!!!!"
 ```
+<br \>
 ```$
 git add push
 ```
 and that`s all.
 
 But... Umm, I then discovered 
+<br \>
 ```$
 git cherry-pick
 ```
@@ -84,7 +88,7 @@ and even more, <br \>
 git hoocks
 ```
 <br \>
-and basically I got the point:
+#####and basically I got the point:
 <div class="custom-image"><img src="https://40.media.tumblr.com/6f6502d41b0f9d7ad730d64a482db9ac/tumblr_o3at2qykMJ1udztn8o1_540.jpg" /></div> 
 <div class="custom-image"><img src="https://41.media.tumblr.com/53246bb32ba50abbd457243da1dbbf77/tumblr_o3at27M65m1udztn8o1_540.jpg" /></div> 
 

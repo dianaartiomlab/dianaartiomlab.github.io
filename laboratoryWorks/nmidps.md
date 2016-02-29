@@ -46,7 +46,6 @@ git remote add origin https://someorigin...
 <ul>
   <li>Create two branches.</li>
 </ul>
-<br />
 To create a new branch I used the command: <br />
 ```$
 git branch branch-name
@@ -58,6 +57,7 @@ To commit from a different branch, one should move on dat branch, using the foll
 ```$
 git checkout branch-name
 ```
+<br />
 After performing the modifications, I used : <br />
 ```$
 git add

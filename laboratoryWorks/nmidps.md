@@ -4,7 +4,8 @@ title: MIDPS
 ---
 
 ##Laboratory Work No.1
-In this laboratory work we had to deal with installing a normal operating system, Ubuntu (Server), in VirtualBox. Basically it was nothing difficult. I installed VirtualBox using <br />
+In this laboratory work we had to deal with installing a normal operating system, Ubuntu (Server), in VirtualBox. Basically it was nothing difficult. I installed VirtualBox using 
+
 ```$
 sudo apt-get install virtual-box
 ```
@@ -23,23 +24,23 @@ The next thing I`ve done was downloading the Ubuntu Server image and installing 
   <li>Run at least 2 sample programs from provided HelloWorldPrograms set</li>
   <li>Initialize and make commit using a VCS, configure it</li>
 </ul>
-To initialize a repository, I used the following commands:<br />
+To initialize a repository, I used the following commands:
 
 ```$
 git init
 ```
 <br />
-initializes a new repository.<br />
+initializes a new repository.
 
 ```$
 echo "#midps" >> README.md
 ```
-makes the README file.<br />
+makes the README file.
 
 ```$
 git commit -m "Initial commit"
 ```
-performs the first commit.<br />
+performs the first commit.
 
 ```$
 git remote add origin https://someorigin...
@@ -48,7 +49,7 @@ git remote add origin https://someorigin...
 <ul>
   <li>Create two branches.</li>
 </ul>
-To create a new branch I used the command: <br />
+To create a new branch I used the command: 
 
 ```$
 git branch branch-name
@@ -56,7 +57,7 @@ git branch branch-name
 <ul>
   <li>Commit two different branches.</li>
 </ul>
-To commit from a different branch, one should move on dat branch, using the following command: <br />
+To commit from a different branch, one should move on dat branch, using the following command: 
 
 ```$
 git checkout branch-name
@@ -83,16 +84,20 @@ git commit -m "Some message"
   ```$
   git remote add origin blah blah...
   ```
+<ul>
   <li>Reset a branch to previous commit.</li>
+</ul>
   To reset the branch to the previous commit I used the command: <br />
   
   ```$
   git reset --hard  3517831ce1
   ```
   The "number" after the --hard is the commit SHA-1 key.
+<ul>
   <li>Merge two branches.</li>
-  To commit two branches I used <br />
-  
+</ul>
+  To commit two branches I used 
+
   ```$ 
   git merge branch-name-to-commit-with
   ``` 
@@ -100,7 +105,7 @@ git commit -m "Some message"
 <ul>
   <li>Conflict solving between 2 branches</li>
 </ul>
-   Opened the file, made some changes, saved it. Then used<br />
+   Opened the file, made some changes, saved it. Then used
    
    ```$
    git add 
@@ -138,19 +143,19 @@ git push
 
 and that`s all.
 
-But... Umm, I then discovered <br \>
+But... Umm, I then discovered 
 
 ```$
 git cherry-pick
 ```
 <br \>
-and <br \>
+and 
 
 ```$
 git rebase
 ```
 <br \>
-and even more, <br \>
+and even more, 
 
 ```$
 git hooks
@@ -163,15 +168,15 @@ Well, so I decided to learn what
 ```$
 git cherry-pick
 ``` 
- does. It is a very powerful feature. It allows us to choose a specific commit, to treat it as a cherry and to pick it. :D<br />
+ does. It is a very powerful feature. It allows us to choose a specific commit, to treat it as a cherry and to pick it. =))<br />
 So what have I done?<br />
-I made a new branch using the command: <br/>
+I made a new branch using the command: 
 
 ```$
-got branch branch1
+git branch branch1
 ```
-<br />
-Switched to it. Made some commits and, on master, picked one of the commits I needed unsing the command: <br />
+
+Switched to it. Made some commits and, on master, picked one of the commits I needed unsing the command: 
 
 ```$
 git cherry-pick ue89fa456

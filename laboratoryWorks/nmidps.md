@@ -76,12 +76,15 @@ git commit -m "Some message"
 <ul>
   <li>Set a branch to track a remote origin on which you are able to push.</li>
   Already done before, using the command <br />
+</ul>
+
   ```$
   git remote add origin blah blah...
   ```
   <br />
   <li>Reset a branch to previous commit.</li>
   To reset the branch to the previous commit I used the command: <br />
+  
   ```$
   git reset --hard  3517831ce1
   ```
@@ -89,12 +92,14 @@ git commit -m "Some message"
   The "number" after the --hard is the commit SHA-1 key.
   <li>Merge two branches.</li>
   To commit two branches I used <br />
+  
   ```$ 
   git merge branch-name-to-commit-with
   ``` 
   <br />command. 
   <li>Conflict solving between 2 branches</li>
    Opened the file, made some changes, saved it. Then used<br />
+   
    ```$
    git add 
    git commit -m "...."

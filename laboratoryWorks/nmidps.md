@@ -4,22 +4,33 @@ title: MIDPS
 ---
 
 ##Laboratory Work No.1
-###Basic Level
+In this laboratory work we had to deal with installing a normal operating system, Ubuntu (Server), in VirtualBox. Basically it was nothing difficult. I installed VirtualBox using 
+```$
+sudo apt-get install virtual-box
+```
+The next thing I`ve done was downloading the Ubuntu Server image and installing it in VirtualBox. Having the IP address I connected my machine to the virtual one, by using SSH. The following image describes my actions:
 
-Connect to a server using SSH
+####Basic Level
+<ul>
+  <li>Connect to a server using SSH</li>
+
 <div class="custom-image"><img src="https://41.media.tumblr.com/899664a9733a7cee10d252a68e3f60df/tumblr_o33y88mR9p1uix9buo2_1280.png" /></div> 
-Run at least 2 sample programs from provided HelloWorldPrograms set</li>
-Initialize and make commit using a VCS, configure it</li>
-###Normal Level
-Create two branches.
-Commit two different branches.
-###Advanced Level 
-Set a branch to track a remote origin on which you are able to push (ex. Github, Bitbucket or custom server)
-<div class="custom-image"><img src="https://41.media.tumblr.com/fb0bfe29bcaae3c618745d40093e6b06/tumblr_o35cvlgcEd1udztn8o1_1280.png" /></div> 
+The next following 5 tasks describe the same image(addet below the tasks)  .
+  <li>Run at least 2 sample programs from provided HelloWorldPrograms set</li>
+  <li>Initialize and make commit using a VCS, configure it</li>
+</ul>
 
+####Normal Level
+<ul>
+  <li>Create two branches.</li>
+  <li>Commit two different branches.</li>
+  ####Advanced Level 
+  <li>Set a branch to track a remote origin on which you are able to push (ex. Github, Bitbucket or custom server)</li>
+  <div class="custom-image"><img src="https://41.media.tumblr.com/fb0bfe29bcaae3c618745d40093e6b06/tumblr_o35cvlgcEd1udztn8o1_1280.png" /></div> 
 
-Set a branch to track a remote origin on which you are able to push.</li>
-Reset a branch to previous commit.</li>
-Merge two branches.
-Conflict solving between 2 branches
+  <li>Set a branch to track a remote origin on which you are able to push.</li>
+  <li>Reset a branch to previous commit.</li>
+  <li>Merge two branches.</li>
+  <li>Conflict solving between 2 branches</li>
+</ul>
 <div class="custom-image"><img src="https://40.media.tumblr.com/9eff6d8d976f6077c034b317fcce0cbf/tumblr_o35cvlgcEd1udztn8o2_1280.png" /></div> 

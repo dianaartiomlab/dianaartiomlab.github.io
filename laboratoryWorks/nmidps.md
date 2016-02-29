@@ -22,6 +22,8 @@ The next thing I`ve done was downloading the Ubuntu Server image and installing 
 ####The next following 5 tasks describe the same image(addet below the tasks)  .
 <ul>
   <li>Run at least 2 sample programs from provided HelloWorldPrograms set</li>
+  See the screen attached, to verify the status of this task. 
+  <div class="custom-image"><img src="https://41.media.tumblr.com/5518e5d800a977f566654b8de863c744/tumblr_o3bnydRG9U1udztn8o1_400.png" /></div> 
   <li>Initialize and make commit using a VCS, configure it</li>
 </ul>
 To initialize a repository, I used the following commands:

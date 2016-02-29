@@ -30,6 +30,7 @@ git init
 ```
 <br />
 initializes a new repository.<br />
+
 ```$
 echo "#midps" >> README.md
 ```
@@ -39,6 +40,7 @@ makes the README file.<br />
 git commit -m "Initial commit"
 ```
 performs the first commit.<br />
+
 ```$
 git remote add origin https://someorigin...
 ```  
@@ -47,6 +49,7 @@ git remote add origin https://someorigin...
   <li>Create two branches.</li>
 </ul>
 To create a new branch I used the command: <br />
+
 ```$
 git branch branch-name
 ```
@@ -54,11 +57,13 @@ git branch branch-name
   <li>Commit two different branches.</li>
 </ul>
 To commit from a different branch, one should move on dat branch, using the following command: <br />
+
 ```$
 git checkout branch-name
 ```
 <br />
 After performing the modifications, I used : <br />
+
 ```$
 git add
 git commit -m "Some message"
@@ -114,18 +119,23 @@ because I knew how to
 ```$
 git pull
 ```
+
 ```$
 git clone
 ```
+
 ```$
 git add .
 ```
+
 ```$
 git commit -m "Write somethig, otherwise you`ll enter VIM and you`ll never EXIT!!!!"
 ```
+
 ```$
 git push
 ```
+
 and that`s all.
 
 But... Umm, I then discovered <br \>
@@ -135,21 +145,28 @@ git cherry-pick
 ```
 <br \>
 and <br \>
+
 ```$
 git rebase
 ```
 <br \>
 and even more, <br \>
+
 ```$
-git hoocks
+git hooks
 ```
 <br \>
 #####and basically I got the point:
 <div class="custom-image"><img src="https://40.media.tumblr.com/6f6502d41b0f9d7ad730d64a482db9ac/tumblr_o3at2qykMJ1udztn8o1_540.jpg" /></div> 
 <div class="custom-image"><img src="https://41.media.tumblr.com/53246bb32ba50abbd457243da1dbbf77/tumblr_o3at27M65m1udztn8o1_540.jpg" /></div> 
-Well, so i decided to learn what git cherry-pick does. It is a very powerful feature. It allows u sto choose a specific commit, to treat it as a cherry and to pick it. :D<br />
+Well, so I decided to learn what 
+```$
+git cherry-pick
+``` 
+ does. It is a very powerful feature. It allows us to choose a specific commit, to treat it as a cherry and to pick it. :D<br />
 So what have I done?<br />
 I made a new branch using the command: <br/>
+
 ```$
 got branch branch1
 ```

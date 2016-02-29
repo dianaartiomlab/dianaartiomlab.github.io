@@ -33,10 +33,59 @@ The next thing I`ve done was downloading the Ubuntu Server image and installing 
 <ul>
   <li>Set a branch to track a remote origin on which you are able to push (ex. Github, Bitbucket or custom server)</li>
   <div class="custom-image"><img src="https://40.media.tumblr.com/35bf62dfcd175242452344052c62591b/tumblr_o3arjnRIeV1udztn8o1_500.png" /></div> 
+</ul>
 
+####The next following 4 tasks describe the same image(addet below the tasks), from Advanced.
+<ul>
   <li>Set a branch to track a remote origin on which you are able to push.</li>
   <li>Reset a branch to previous commit.</li>
   <li>Merge two branches.</li>
   <li>Conflict solving between 2 branches</li>
 </ul>
 <div class="custom-image"><img src="https://40.media.tumblr.com/9703a24e1d368e80b8e6c1906d4b3b04/tumblr_o3arof4qwk1udztn8o1_540.png" /></div> 
+
+####Conclusion
+Althought at the beginnig it seemed to be a quite difficult task, because I've never done it before, in the end I felt pretty comfortable to install Ubuntu on a virtual machine, to explore the VirtualBox itself, and to connect through SSH. Moreover, it somehow made me understand how different processes, with different meaning can run on the same machine without interrupting each other, without even knowing about each other. <br \>
+The second part of the laboratory work was to play with some VCS. I used git. Git - because I used it before. I thought I kinda look like this...
+<div class="custom-image"><img src="http://s.quickmeme.com/img/e0/e0d4afacba74c1b28ae4caad6f98e9d2d1689fe8e43dc1ee680214c75eb24e17.jpg" /></div> 
+because I knew how to <br \>
+```$
+git pull
+```
+
+```$
+git clone
+```
+
+```$
+git add .
+```
+<br \>
+```$
+git commit -m "Write somethig, otherwise you`ll enter VIM and you`ll never EXIT!!!!"
+```
+```$
+git add push
+```
+and that`s all.
+
+But... Umm, I then discovered 
+```$
+git cherry-pick
+```
+<br \>
+and
+```$
+git rebase
+```
+<br \>
+and even more, <br \>
+```$
+git hoocks
+```
+<br \>
+and basically I got the point:
+<div class="custom-image"><img src="https://40.media.tumblr.com/6f6502d41b0f9d7ad730d64a482db9ac/tumblr_o3at2qykMJ1udztn8o1_540.jpg" /></div> 
+<div class="custom-image"><img src="https://41.media.tumblr.com/53246bb32ba50abbd457243da1dbbf77/tumblr_o3at27M65m1udztn8o1_540.jpg" /></div> 
+
+

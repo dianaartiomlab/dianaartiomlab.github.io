@@ -9,26 +9,17 @@ title: MIDPS
 ####Connect to a server using SSH
 <div class="custom-image"><img src="https://41.media.tumblr.com/899664a9733a7cee10d252a68e3f60df/tumblr_o33y88mR9p1uix9buo2_1280.png" /></div> 
 ####Run at least 2 sample programs from provided HelloWorldPrograms set</li>
-####Initialize and make commit using a VCS</li>
-<div class="custom-image"><img src="https://40.media.tumblr.com/207354596a231fda81cfd623a0f516c1/tumblr_o33y88mR9p1uix9buo3_1280.png" /></div> 
-
-
+####Initialize and make commit using a VCS, configure it</li>
 ###Normal Level
-
 ####Create two branches.
-<div class="custom-image"><img src="https://41.media.tumblr.com/40f530b3c95bb71186b0949fae9578cf/tumblr_o33y88mR9p1uix9buo6_1280.png" /></div> 
 ####Commit two different branches.
-<div class="custom-image"><img src="https://36.media.tumblr.com/a8e3238c1d7c57642d12d2c411775f3f/tumblr_o33y88mR9p1uix9buo7_1280.png" /></div> 
-
-
 ###Advanced Level 
+####Set a branch to track a remote origin on which you are able to push (ex. Github, Bitbucket or custom server)
+<div class="custom-image"><img src="https://41.media.tumblr.com/fb0bfe29bcaae3c618745d40093e6b06/tumblr_o35cvlgcEd1udztn8o1_1280.png" /></div> 
+
 
 ####Set a branch to track a remote origin on which you are able to push.</li>
 ####Reset a branch to previous commit.</li>
-<div class="custom-image"><img src="https://36.media.tumblr.com/b19f5e41999dac9dcb9190ed97b737ea/tumblr_o33y91nxIY1uix9buo7_1280.png" /></div> 
 ####Merge two branches.
-<div class="custom-image"><img src="https://41.media.tumblr.com/ed8fc40e7e55c6c3b4c4fbee217faaa2/tumblr_o33y88mR9p1uix9buo10_1280.png" /></div> 
 ####Conflict solving between 2 branches
-<div class="custom-image"><img src="https://41.media.tumblr.com/96c080c310d068bc1d88007c80f3bbcf/tumblr_o33y91nxIY1uix9buo2_1280.png" /></div> 
-<div class="custom-image"><img src="https://40.media.tumblr.com/ee102ff2660320313924fcfc925dcfcc/tumblr_o33y91nxIY1uix9buo5_1280.png" /></div> 
-
+<div class="custom-image"><img src="https://40.media.tumblr.com/9eff6d8d976f6077c034b317fcce0cbf/tumblr_o35cvlgcEd1udztn8o2_1280.png" /></div> 

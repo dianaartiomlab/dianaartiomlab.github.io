@@ -33,13 +33,11 @@ initializes a new repository.<br />
 ```$
 echo "#midps" >> README.md
 ```
-<br />
 makes the README file.<br />
 
 ```$
 git commit -m "Initial commit"
 ```
-<br />
 performs the first commit.<br />
 ```$
 git remote add origin https://someorigin...
@@ -60,7 +58,6 @@ To commit from a different branch, one should move on dat branch, using the foll
 ```$
 git checkout branch-name
 ```
-<br />
 After performing the modifications, I used : <br />
 ```$
 git add
@@ -81,14 +78,12 @@ git commit -m "Some message"
   ```$
   git remote add origin blah blah...
   ```
-  <br />
   <li>Reset a branch to previous commit.</li>
   To reset the branch to the previous commit I used the command: <br />
   
   ```$
   git reset --hard  3517831ce1
   ```
-  <br />
   The "number" after the --hard is the commit SHA-1 key.
   <li>Merge two branches.</li>
   To commit two branches I used <br />
@@ -96,8 +91,10 @@ git commit -m "Some message"
   ```$ 
   git merge branch-name-to-commit-with
   ``` 
-  <br />command. 
+  command. 
+<ul>
   <li>Conflict solving between 2 branches</li>
+</ul>
    Opened the file, made some changes, saved it. Then used<br />
    
    ```$

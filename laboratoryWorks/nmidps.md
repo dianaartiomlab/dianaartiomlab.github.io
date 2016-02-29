@@ -48,42 +48,36 @@ The next thing I`ve done was downloading the Ubuntu Server image and installing 
 Althought at the beginnig it seemed to be a quite difficult task, because I've never done it before, in the end I felt pretty comfortable to install Ubuntu on a virtual machine, to explore the VirtualBox itself, and to connect through SSH. Moreover, it somehow made me understand how different processes, with different meaning can run on the same machine without interrupting each other, without even knowing about each other. <br \>
 The second part of the laboratory work was to play with some VCS. I used git. Git - because I used it before. I thought I kinda look like this...
 <div class="custom-image"><img src="http://s.quickmeme.com/img/e0/e0d4afacba74c1b28ae4caad6f98e9d2d1689fe8e43dc1ee680214c75eb24e17.jpg" /></div> 
-because I knew how to <br \>
-<br \>
+because I knew how to 
 
 ```$
 git pull
 ```
-<br \>
 ```$
 git clone
 ```
-<br \>
 ```$
 git add .
 ```
-<br \>
 ```$
 git commit -m "Write somethig, otherwise you`ll enter VIM and you`ll never EXIT!!!!"
 ```
-<br \>
 ```$
 git add push
 ```
 and that`s all.
 
 But... Umm, I then discovered 
-<br \>
+
 ```$
 git cherry-pick
 ```
-<br \>
+
 and
 ```$
 git rebase
 ```
-<br \>
-and even more, <br \>
+and even more, 
 ```$
 git hoocks
 ```

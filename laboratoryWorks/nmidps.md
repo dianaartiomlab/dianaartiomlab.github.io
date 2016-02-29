@@ -4,10 +4,11 @@ title: MIDPS
 ---
 
 ##Laboratory Work No.1
-In this laboratory work we had to deal with installing a normal operating system, Ubuntu (Server), in VirtualBox. Basically it was nothing difficult. I installed VirtualBox using 
+In this laboratory work we had to deal with installing a normal operating system, Ubuntu (Server), in VirtualBox. Basically it was nothing difficult. I installed VirtualBox using <br \>
 ```$
 sudo apt-get install virtual-box
 ```
+<br \>
 The next thing I`ve done was downloading the Ubuntu Server image and installing it in VirtualBox. Having the IP address I connected my machine to the virtual one, by using SSH. The following image describes my actions:
 
 ####Basic Level

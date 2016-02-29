@@ -23,12 +23,45 @@ The next thing I`ve done was downloading the Ubuntu Server image and installing 
   <li>Run at least 2 sample programs from provided HelloWorldPrograms set</li>
   <li>Initialize and make commit using a VCS, configure it</li>
 </ul>
+To initialize a repository, I used the following commands:<br />
 
+```$
+git init
+```
+initializes a new repository.
+```$
+echo "#midps" >> README.md
+```
+makes the README file.
+
+```$
+git commit -m "Initial commit"
+```
+performs the first commit.
+```$
+git remote add origin https://someorigin...
+```  
 ####Normal Level
 <ul>
   <li>Create two branches.</li>
+</ul>
+To create a new branch I used the command: <br />
+```$
+git branch branch-name
+```
+<ul>
   <li>Commit two different branches.</li>
 </ul>
+To commit from a different branch, one should move on dat branch, using the following command: <br />
+```$
+git checkout branch-name
+```
+<br />
+After performing the modifications, I used : <br />
+```$
+git add
+git commit -m "Some message"
+```
 ####Advanced Level 
 <ul>
   <li>Set a branch to track a remote origin on which you are able to push (ex. Github, Bitbucket or custom server)</li>
@@ -38,9 +71,30 @@ The next thing I`ve done was downloading the Ubuntu Server image and installing 
 ####The next following 4 tasks describe the same image(addet below the tasks), from Advanced.
 <ul>
   <li>Set a branch to track a remote origin on which you are able to push.</li>
+  Already done before, using the command 
+  ```$
+  git remote add origin blah blah...
+  ```
+  <br />
   <li>Reset a branch to previous commit.</li>
+  To reset the branch to the previous commit I used the command: 
+  ```$
+  git reset --hard  3517831ce1
+  ```
+  The "number" after the --hard is the commit SHA-1 key.
   <li>Merge two branches.</li>
+  To commit two branches I used 
+  ```$ 
+  git merge branch-name-to-commit-with
+  ``` command. 
   <li>Conflict solving between 2 branches</li>
+   Opened the file, made some changes, saved it. Then used
+   ```$
+   git add 
+   ```
+   ```$
+   git commit -m "...."
+   ```
 </ul>
 <div class="custom-image"><img src="https://40.media.tumblr.com/9703a24e1d368e80b8e6c1906d4b3b04/tumblr_o3arof4qwk1udztn8o1_540.png" /></div> 
 

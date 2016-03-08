@@ -44,16 +44,14 @@ x4 = Nr. of advertisements for Internet <br />
 
 and using the constrains from the problem I obtained the following system of inequalities:
 
-$$2000x_1 + 600x_2 + 300x_3 + x_4 \se 20 000$$
-$$2000-9x_1 + x_2 + x_3 + x_4 \se 0$$
-$$2000-3x_1 - 3x_2 - 3x_3 + 7x_4 \se 0$$
-$$2000x_3 \se 5$$
+2000x1 + 600x2 + 300x3 + x4 <= 20 000<br />
+-9x1 + x2 + x3 + x4 <= 0<br />
+-3x1 - 3x2 - 3x3 + 7x4 <= 0<br />
+x_3 <= 5<br />
 
-and the Objective function:
+and the Objective function:<br />
 
-$Z = 100000x_1 + 40000x_2 + 18000x_3 + 1000x_4$ 
-
-$\omega = d\phi / dt$
+Z = 100000x1 + 40000x2 + 18000x3 + 1000x4
 
 In excel, I represented the data in the following way:
 <div class="custom-image"><img src="https://36.media.tumblr.com/577525c2dc82a773e9484c6d3152862d/tumblr_o3pkzxwNM61udztn8o6_500.png" /></div>

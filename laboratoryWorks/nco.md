@@ -63,6 +63,12 @@ Same model was used for other different data:
 In order to solve the problem, I used the Solver:
 <div class="custom-image"><img src="https://40.media.tumblr.com/ac3dfecb86cfc501f0aa1f025519d43a/tumblr_o3pkzxwNM61udztn8o3_1280.png" /></div>
 
+The constrains were set in the following way:
+For the first equation: <br />
+2000x1 + 600x2 + 300x3 + x4 <= 20 000<br />
+I used the function SUMPRODUCT. As parameters - first - "Cost per advertising" row in the table, and second - the first row in "Equation parameters" section.
+Same was logic was applied for the other constrains.
+
 ####Revelations: ))
 First of all, I lost a lot of time, trying to undestand why my result differed from my group mates, I obtaine smth like... floating point numers. Which is not okay. I only should have intefer numbers when dealing with "number of pieces"(related to the number of each advertisement type). To solve this issue I added the constraint for the changing cells - to accept only integer values. I made sure, that it is "intelligent" conversion to int. I mean, not just to round, but to round such that the result will be in accordance to the maximum solution.
 
@@ -75,6 +81,8 @@ The Excel model, for this problem, looks in the following way:
 <div class="custom-image"><img src="https://41.media.tumblr.com/ffb9bdcbaf4775f42b3b7be58e93e083/tumblr_o3pkzxwNM61udztn8o5_500.png" /></div>
 Moreover, below the colums From, To, Cost, Go, Net Flow, Demand, are defined names of these columns, called respectively to the column strings:
 <div class="custom-image"><img src="https://36.media.tumblr.com/ae2c4f3c687482ec9623ca93b367f607/tumblr_o3pl0nYsBy1udztn8o1_1280.png" /></div>
+
+In order to perform the work, I used the SUMIF functions to calculate the Net Flow of each node.
 
 ###Conclusion:
 It turns out that Excel is a really powerful instrument. It was a great wonder for me to see that using a Solver you can find out the maximum/minimum value of a function. Moreover, in excel you can solve "shortest path in a graph" problem, which is kinda cool! I`ve learned cool stuff here, and I pretty challenged to perform the next laboratory works.

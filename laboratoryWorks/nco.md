@@ -15,7 +15,7 @@ The advertising alternatives for a company includes television, radio, newspaper
         <th>Television</th>
         <th>Newspaper</th>
         <th>Radio</th>
-        <th>Online Advertising</th>
+        <th>Online</th>
     </tr>
     <tr>
         <td>Cost per advertisment</td>

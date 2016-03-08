@@ -43,21 +43,15 @@ x3 = Nr. of advertisements for radion<br />
 x4 = Nr. of advertisements for Internet <br />
 
 and using the constrains from the problem I obtained the following system of inequalities:
-$$
-\begin{aligned}
- 2000x_1 + 600x_2 + 300x_3 + x_4 &<= 20 000 \\
- -9x_1 + x_2 + x_3 + x_4 &<= 0 \\
- -3x_1 - 3x_2 - 3x_3 + 7x_4 &<= 0 \\
- x_3 &<= 5 \\
-\end{aligned}
-$$
+
+$$2000x_1 + 600x_2 + 300x_3 + x_4 \se 20 000$$
+$$2000-9x_1 + x_2 + x_3 + x_4 \se 0$$
+$$2000-3x_1 - 3x_2 - 3x_3 + 7x_4 \se 0$$
+$$2000x_3 \se 5$$
 
 and the Objective function:
-$$
-\begin{aligned}
- Z &= 100000x_1 + 40000x_2 + 18000x_3 + 1000x_4 \\
-\end{aligned}
-$$
+
+$$Z \e 100000x_1 + 40000x_2 + 18000x_3 + 1000x_4$$ 
 
 In excel, I represented the data in the following way:
 <div class="custom-image"><img src="https://36.media.tumblr.com/577525c2dc82a773e9484c6d3152862d/tumblr_o3pkzxwNM61udztn8o6_500.png" /></div>

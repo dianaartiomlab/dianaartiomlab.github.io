@@ -1,6 +1,6 @@
 ---
 layout: default
-title: APA
+title: Operations Research
 ---
 
 #Laboratory work Nr. 1

@@ -53,6 +53,8 @@ and the Objective function:
 
 $Z = 100000x_1 + 40000x_2 + 18000x_3 + 1000x_4$ 
 
+$\omega = d\phi / dt$
+
 In excel, I represented the data in the following way:
 <div class="custom-image"><img src="https://36.media.tumblr.com/577525c2dc82a773e9484c6d3152862d/tumblr_o3pkzxwNM61udztn8o6_500.png" /></div>
 

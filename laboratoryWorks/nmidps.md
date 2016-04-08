@@ -14,6 +14,8 @@ In this laboratory work we had to create a travelling in time machine. To perfor
 	</li>
 </ul>
 
+[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://www.youtube.com/watch?v=3t0VMJdJna0&nohtml5=False "Everything Is AWESOME")
+
 Actually,I'm kidding))
 We had to make a calculator.
 The source code of the laboratory work can be found <a href="https://github.com/dianaartiom/calculator-laboratory">here</a>.

@@ -10,8 +10,7 @@ In this laboratory work we had to create a travelling in time machine. To perfor
 	<li>A tanc<br />
 	<div class="custom-image"><img src="https://40.media.tumblr.com/20df6436da8d2c865d198bfdeb226fcb/tumblr_o5ammmdfy21udztn8o1_1280.jpg" /></div> 
 	</li>
-	<li>and will fill it with the fuel from <a href="https://www.youtube.com/watch?v=3t0VMJdJna0&nohtml5=False">BEMOL</a>
-		<div class="custom-image"><img src="https://41.media.tumblr.com/575207e0eef7058265c874c1cb011641/tumblr_o5anolsljV1udztn8o1_400.png" /></div> 
+	<li>and will fill it with the fuel from <a href="https://www.youtube.com/watch?v=3t0VMJdJna0&nohtml5=False">BEMOL</a><div class="custom-image"><img src="https://41.media.tumblr.com/575207e0eef7058265c874c1cb011641/tumblr_o5anolsljV1udztn8o1_400.png" /></div> 
 	</li>
 </ul>
 

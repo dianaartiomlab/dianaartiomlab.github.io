@@ -14,7 +14,7 @@ In this laboratory work we had to create a travelling in time machine. To perfor
 	</li>
 </ul>
 
-[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://www.youtube.com/watch?v=3t0VMJdJna0&nohtml5=False "Everything Is AWESOME")
+[![Everything Is AWESOME](https://40.media.tumblr.com/e5f02efc09647d9100c3584e9e454671/tumblr_o5azlt3opU1udztn8o1_540.png)](https://www.youtube.com/watch?v=3t0VMJdJna0&nohtml5=False "Everything Is AWESOME")
 
 Actually,I'm kidding))
 We had to make a calculator.

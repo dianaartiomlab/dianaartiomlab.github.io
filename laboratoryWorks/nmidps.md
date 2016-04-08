@@ -6,7 +6,7 @@ title: MIDPS
 
 In this laboratory work we had to create a travelling in time machine. To perform this laboratory work I used the following equipment:
 <ul>
-	<li>div class="custom-image"><img src="https://41.media.tumblr.com/6d829fd1563557a0370daee8590c5366/tumblr_o5amuvS6vG1udztn8o1_540.jpg" />
+	<li><div class="custom-image"><img src="https://41.media.tumblr.com/6d829fd1563557a0370daee8590c5366/tumblr_o5amuvS6vG1udztn8o1_540.jpg" />
 	</li>
 	<li>A tanc<br />
 	<div class="custom-image"><img src="https://40.media.tumblr.com/20df6436da8d2c865d198bfdeb226fcb/tumblr_o5ammmdfy21udztn8o1_1280.jpg" /></div> 

@@ -2,7 +2,7 @@
 layout: default
 title: MIDPS
 ---
-##Laboratory Work No.1
+##Laboratory Work No.2
 
 In this laboratory work we had to create a travelling in time machine. To perform this laboratory work I used the following equipment:
 <ul>

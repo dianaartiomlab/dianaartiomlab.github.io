@@ -2,6 +2,38 @@
 layout: default
 title: Operations Research
 ---
+#Laboratory work Nr. 2
+
+###Maximal Flow problem
+####Condition of the Problem
+Using Excel solver, or any other software, find the Max-Flow value for the network between source point 1 and destination point 8. Nework is shown in the image below. Value on the edge shows maximum number of units that can be transported on a given path between two vertices. Report should contain the constraints and the function that you chose to be optimized. <br />
+Basically, that`s how the graph looks like:
+
+<div class="custom-image"><img src="https://41.media.tumblr.com/b9df34a08c70e2548fa8922c54b208e5/tumblr_o5fukuZ1Si1rl36tko1_500.png" /></div>
+In order to solve the problem I used the excel solver. So, asically the following image describes perfectly the way I solved the problem:
+
+<div class="custom-image"><img src="https://36.media.tumblr.com/265647f8d318aec5df02f277602feb81/tumblr_o5fusvmDRN1udztn8o3_1280.png" /></div>
+
+For making my life easier I defined some names:
+
+<div class="custom-image"><img src="https://41.media.tumblr.com/dc3f432a7f8301b1565910940278dc01/tumblr_o5fusvmDRN1udztn8o1_1280.png" /></div>
+
+The solver has the following subject to constrains:
+
+<div class="custom-image"><img src="https://41.media.tumblr.com/70954600342ffe064bcca2f6dd298e16/tumblr_o5fusvmDRN1udztn8o2_1280.png" /></div>
+
+Actually, solved proved itself to be also a better solution in maximal flow finding problems, as it is very easy and comfortable to use. <br />
+
+A bit more complicated task was to create a program to find the maximal flow problem, by using the Ford-Fulkerson algorithm.
+Next, follows the program code.
+
+```
+//code to be inserted here
+```
+
+Conclusion:
+It turns out that Ford-Fulkerson is conceptually a straightforward algorithm for solving the maximum flow problem.
+But what`s the main idea? So basically here it is: keep adding augumenting paths until there are no more. It is very useful, and when you have a network problem which states in finding the max flow, the most thing u will like to do is to use the Ford-Fulkerson algorithm.
 
 #Laboratory work Nr. 1
 

@@ -24,6 +24,24 @@ The source code of the laboratory work can be found <a href="https://github.com/
 Basically, the UI looks something like this:
 <div class="custom-image"><img src="https://41.media.tumblr.com/575207e0eef7058265c874c1cb011641/tumblr_o5anolsljV1udztn8o1_400.png" /></div> 
 
+######This week I made it for the first time. I wrote JAVA!
+
+####Work process
+#####Core <br />
+A "special" thing I would like to tolk about is the way I parsed the input string. In order to parse it, i worked with regular expressions. Here is an example of code I used:
+
+```
+String signRegex = "(\\+|\\-|\\*|\\/|sqrt|\\^)";
+String floatingPointNumber = "(([-|+])?[0-9]+\\.?[0-9]*)";
+String pattern = floatingPointNumber + signRegex + floatingPointNumber;
+```
+I created a pattern and used Matcher. 
+```
+Pattern r = Pattern.compile(pattern);
+Matcher m = r.matcher(string)[]
+```
+I worked with groups. I can explain. :)
+
 But most of all, I would like to talk about the project structure. <br />
 I decided to separate the project in two parts. One of the parts consists from "Business Logic", which means the part which is related to the "smart" part of the program. The second part is UI. Here the visual part was implemented. Actually, that was done in the following way: I made an artefact(JAR) of the Logic part and icluded in the newly created project, where I implemented the UI. Moreover, same procedure was done for the lastly created project. Thus, I obtained a JAR file runnable on more platforms.<br />
 Don`t forget to visit my github repository to see the code. ;)

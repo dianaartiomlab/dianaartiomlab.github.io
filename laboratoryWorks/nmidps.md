@@ -24,9 +24,17 @@ The source code of the laboratory work can be found <a href="https://github.com/
 Basically, the UI looks something like this:
 <div class="custom-image"><img src="https://41.media.tumblr.com/575207e0eef7058265c874c1cb011641/tumblr_o5anolsljV1udztn8o1_400.png" /></div> 
 
-But most of all, I would like to talk about the project structure. <br />
-I decided to separate the project in two parts. One of the parts consists from "Business Logic", which means the part which is related to the "smart" part of the program. The second part is UI. Here the visual part was implemented. Actually, that was done in the following way: I made an artefact(JAR) of the Logic part and icluded in the newly created project, where I implemented the UI. Moreover, same procedure was done for the lastly created project. Thus, I obtained a JAR file runnable on more platforms.<br />
+#####This week I did for the first time! I wrote JAVA!
+
+The project structure looks like this: the Core and the Interface. The core contains the calculator logic. The Interface contains the UI - graphical/visual part of the calculator, with which the user will interract. 
+######What about the work flow?Actually, that was done in the following way: I made an artefact(JAR) of the Logic part and icluded in the newly created project, where I implemented the UI. Moreover, same procedure was done for the lastly created project. Thus, I obtained a JAR file runnable on more platforms.<br />
 Don`t forget to visit my github repository to see the code. ;)
+
+####Conclusion:
+This laboratory work was really-really interesting. What made it so interesting to me? Of course writing the report and dividing the project in two parts - the gui and the logic tiers. This is my first java trial. I`ve never tried java, not even to write an app or something like that. At some point, I realized i`ve done bidlocode. So I decided I`l rewrite it from scratch. It was painfully, but I did it. Of course in the end I still obtained bidlocode, but at least it`s less now(lines of code ) :D. It`s really nice that what we learn at the course helps us to perform the laboratory work. What`s really funny now is that now same task seems a lot more easier than it seemt two weeks ago, and that is, probably, a result. So what`s the difference btw now and two weeks ago? Lots of lines of bidlocode were written, some coffee in minus and... my pc probably hates me for so many
+```java -jar Core.jar 2^3+((3-4)^2)
+```
+like-previous terminal commands, project creations and so on. Even stackoverflow must be surprised on frequency i visited their site, considering the bunch of questions I had... Now I feel really motivated and challenged to proceed to the next laboratory work, and to do my best. :)
 
 
 ##Laboratory Work No.1

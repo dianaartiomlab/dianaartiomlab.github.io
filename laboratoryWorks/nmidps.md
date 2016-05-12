@@ -27,7 +27,7 @@ As you see, I downloaded 2 different fonts, in order to make the app look better
 A new intend was created in the second activity, were the actual "focus mode" can be reached.
 <div class="custom-image"><img src="https://66.media.tumblr.com/31d8cd9446e5d06315235dd15b44e8bf/tumblr_o72zz02b2i1rl36tko1_1280.jpg" /></div> 
 
-The source code of the laboratory work can be found <a href="https://github.com/dianaartiom/pomodor'">here</a>.
+The source code of the laboratory work can be found <a href="https://github.com/dianaartiom/pomodoro">here</a>.
 
 
 ###Conclusion: 

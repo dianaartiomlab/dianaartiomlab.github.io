@@ -28,8 +28,95 @@ A bit more complicated task was to create a program to find the maximal flow pro
 Next, follows the program code.
 
 ```
-//code to be inserted here
+# definition of edge class
+class Edge(object):
+    def __init__(self, u, v, w):
+        self.source = u
+        self.destination = v
+        self.capacity = w
+    def __repr__(self):
+        return "%s->%s:%s" % (self.source, self.destination, self.capacity)
+
+
+class FlowNetwork():
+    def __init__(self):
+        self.directions = {}
+        self.flow = {}
+
+    # function to add a vertex
+    def add_vertex(self, vertex):
+        self.directions[vertex] = []
+
+    # returns the edges connected to a specific vertex
+    def get_edges(self, v):
+        return self.directions[v]
+
+    # adds a new edge
+    def add_edge(self, u, v, w=0):
+        if u == v:
+            raise ValueError("u == v")
+        edge = Edge(u,v,w)
+        redge = Edge(v,u,0)
+        edge.redge = redge #redge is not defined in Edge class
+        redge.redge = edge
+        self.directions[u].append(edge)
+        self.directions[v].append(redge)
+        self.flow[edge] = 0
+        self.flow[redge] = 0
+
+
+    # fing a path
+    def find_path(self, source, destination, path, path_set):
+        if source == destination: # make sure starting vertex doesn`t match the end one
+            return path
+        for edge in self.get_edges(source):
+            residual = edge.capacity - self.flow[edge] # compute the residual value
+            if residual > 0 and not (edge,residual) in path_set:
+                path_set.add((edge, residual))
+                result = self.find_path( edge.destination, destination, path + [(edge,residual)], path_set)
+                if result != None:
+                    return result
+
+    # compute maximal flow
+    def max_flow(self, source, destination):
+        path = self.find_path(source, destination, [], set())
+        while path != None:
+            flow = min(res for edge,res in path)
+            for edge,res in path:
+                self.flow[edge] += flow 
+                self.flow[edge.redge] -= flow
+            path = self.find_path(source, destination, [], set())
+        return sum(self.flow[edge] for edge in self.get_edges(source))
+
+
+# definitio of graph object, an instance of FlowNetwork class
+graph = FlowNetwork()
+[graph.add_vertex(v) for v in "12345678"] # iteratively, add each vertex
+
+# addition ow each edge to the graph, in accordance to the condition of the problem
+graph.add_edge('1', '2', 16)
+graph.add_edge('1', '3', 13)
+graph.add_edge('2', '3', 4)
+graph.add_edge('2', '4', 12)
+graph.add_edge('3', '2', 10)
+graph.add_edge('3', '5', 14)
+graph.add_edge('3', '7', 5)
+graph.add_edge('4', '3', 9)
+graph.add_edge('4', '6', 20)
+graph.add_edge('5', '4', 7)
+graph.add_edge('5', '6', 8)
+graph.add_edge('5', '7', 3)
+graph.add_edge('6', '7', 5)
+graph.add_edge('6', '8', 12)
+graph.add_edge('7', '8', 18)
+
+# print the solution
+print graph.max_flow('1','8')
 ```
+
+Very strange, but the solution matches the one obtained using Excel Solver.. Hmmm, what a mistery ))
+
+<div class="custom-image"><img src="https://40.media.tumblr.com/07261f77d0bef468b10074aa7ca368ea/tumblr_o5h8mz7noH1udztn8o1_400.png" /></div>
 
 ####Conclusion:
 It turns out that Ford-Fulkerson is conceptually a straightforward algorithm for solving the maximum flow problem.

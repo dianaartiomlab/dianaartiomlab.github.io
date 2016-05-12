@@ -2,6 +2,40 @@
 layout: default
 title: MIDPS
 ---
+##Laboratory Work No.3
+
+The task for the third laboratory work was to create a pomodoro like app. In order to perform this laboratory work I had to deal with learnig the basic android concencepts, the life cycle of an application, ect. The hardest part was ingnoring all the facebook, twitter and telegram notifications. But in the end, I did it! Yey!
+<br />
+The first step in order to create a super fancy pomodoro app, was to learn, to get into what android is, and how to eat it. Here I met Advik Kabir: 
+
+<div class="custom-image"><img src="http://vomzi.com/wp-content/uploads/2016/03/indian-gif-852.gif" /></div> 
+No, not this, the other one:
+<div class="custom-image"><img src="http://s2.djyimg.com/n3/eet-content/uploads/2014/02/Indian-head-shake.gif" /></div> 
+
+The next step was to choose a fancy bakground for my app. The following images were candidates for my app:
+
+<div class="custom-image"><img src="http://cdn.newsday.com/polopoly_fs/1.3718944.1337353874!/httpImage/image.JPG_gen/derivatives/display_600/image.JPG" /></div> 
+<div class="custom-image"><img src="http://bemol.md/wp-content/uploads/2015/08/causeni.jpg" /></div> 
+<div class="custom-image"><img src="http://dogr.io/doge.png" /></div> 
+ 
+In fact, none of this photos were used. The background of my app, looks as serious as the name of my app: "SeriousPomodoro".
+
+<div class="custom-image"><img src="https://66.media.tumblr.com/3d95b05a3bd554e5656a5c216b9fe4f4/tumblr_o72zz02b2i1rl36tko2_1280.jpg" /></div> 
+
+As you see, I downloaded 2 different fonts, in order to make the app look better, and to make every user feel excited about the app.
+
+A new intend was created in the second activity, were the actual "focus mode" can be reached.
+<div class="custom-image"><img src="https://66.media.tumblr.com/31d8cd9446e5d06315235dd15b44e8bf/tumblr_o72zz02b2i1rl36tko1_1280.jpg" /></div> 
+
+The source code of the laboratory work can be found <a href="https://github.com/dianaartiom/pomodor'">here</a>.
+
+
+###Conclusion: 
+In this laboratory work we developed(or better saying - initialised) our mobile programming skills. It was a great amount of information, for some of us maybe even challenging, but it was worth it. The things I liked the most was the project architecture. You`re splitting your UI with your bussines logic, without even thinking you are doing it, an that`s kinda cool. Another thing I got in touch with was multithreading. The first iteration my code contained multiple threads, but I decided I have to improve my threading experience first, and then present a lab with it inside. But anyway, I spend some days on trying to understand what this is for, how to use it, and I`m ready to try implementing. I still feel motivated to do tasks and to proceed to the next point in my laboratory work journey. =) 
+<br />
+P.S. Ask me for an demo. :)
+
+
 ##Laboratory Work No.2
 
 In this laboratory work we had to create a travelling in time machine. To perform this laboratory work I used the following equipment:

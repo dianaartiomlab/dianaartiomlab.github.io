@@ -54,6 +54,7 @@ I AJAX Requests when adding a new post and when deleting one. Ajax (Asynchronous
 <br />
 
 You can visit my <a href="https://github.com/dianaartiom/green-rainbow">Github account</a> to see the code.
+P.S. Ask me to show a demo!
 
 ###Conclusion:
 Basically, most of the things while performing this laboratory work were known. The interesting was the part with Ajax. I did't know what this is and that was fine. I've got something to learn, that made the lab more enjoying. So far, the thing I liked the most is that by using Ajax you can update content on the page without rendering the entire page. I got stuck in the beginning, but after a couple of sites the things shaped themselves to be a bit more clear. I liked the way it worked in the case of creating a post, that's why I decided add this feature to the "Delete" button. It was fun and I really enjoyed the lab.

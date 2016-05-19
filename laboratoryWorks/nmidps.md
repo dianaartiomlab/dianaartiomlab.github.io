@@ -63,9 +63,6 @@ Basically, most of the things while performing this laboratory work were known. 
 
 While making a general description of the course - It was, imho, the most amazing course up to this moment. I really enjoyed doing labs, even if there were white nights. The word "enjoying" describes perfect my state while writing code for these labs. Keep hacking on and motivating others!
 
-
-
-
 ##Laboratory Work No.3
 
 The task for the third laboratory work was to create a pomodoro like app. In order to perform this laboratory work I had to deal with learnig the basic android concencepts, the life cycle of an application, ect. The hardest part was ingnoring all the facebook, twitter and telegram notifications. But in the end, I did it! Yey!
@@ -84,8 +81,12 @@ The next step was to choose a fancy bakground for my app. The following images w
 
 In fact, none of this photos were used. The background of my app, looks as serious as the name of my app: "SeriousPomodoro".
 <br />
-In my project I have 2 classes  - MainWindow and WorkingPomodoro. The first class is responsible for the main window screen and the second class is responsible for another Intent in which I actually created the progress bar and the timer.
+<br />
+
+In my project I have 2 classes  - `MainWindow` and `WorkingPomodoro`. The first class is responsible for the main window screen and the second class is responsible for another Intent in which I actually created the progress bar and the timer.
+
 <br/>
+
 For getting to the intent of the second screen I made a function :
 
 To get the id of each UI object I used:
@@ -112,6 +113,7 @@ public void onGetFocusedButtonClicked(View view) {
 ```
 
 The funcion responsible for TextView setting time and progressBar setting proggress whith timer is the following:
+
 ```
 @Override
 			 public void onTick(long millisUntilFinished) {
@@ -127,6 +129,8 @@ The full code can be found on Github (See the link below).
 <div class="custom-image"><img src="https://66.media.tumblr.com/3d95b05a3bd554e5656a5c216b9fe4f4/tumblr_o72zz02b2i1rl36tko2_1280.jpg" /></div>
 
 As you see, I downloaded 2 different fonts, in order to make the app look better, and to make every user feel excited about the app.
+
+<br />
 
 A new intend was created in the second activity, were the actual "focus mode" can be reached.
 <div class="custom-image"><img src="https://66.media.tumblr.com/31d8cd9446e5d06315235dd15b44e8bf/tumblr_o72zz02b2i1rl36tko1_1280.jpg" /></div>

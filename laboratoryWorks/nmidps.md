@@ -83,6 +83,46 @@ The next step was to choose a fancy bakground for my app. The following images w
 <div class="custom-image"><img src="http://dogr.io/doge.png" /></div>
 
 In fact, none of this photos were used. The background of my app, looks as serious as the name of my app: "SeriousPomodoro".
+<br />
+In my project I have 2 classes  - MainWindow and WorkingPomodoro. The first class is responsible for the main window screen and the second class is responsible for another Intent in which I actually created the progress bar and the timer.
+<br/>
+For getting to the intent of the second screen I made a function :
+
+To get the id of each UI object I used:
+
+```progressBar=(ProgressBar)findViewById(R.id.progressBar);
+        relaxBar=(ProgressBar)findViewById(R.id.progressBar2);
+        relaxBar.getProgressDrawable().setColorFilter(
+                Color.RED, android.graphics.PorterDuff.Mode.SRC_IN);
+        start_timer=(Button)findViewById(R.id.button);
+        stop_timer=(Button)findViewById(R.id.button2);
+        textView1 = (TextView) findViewById( R.id.textViewTimer );
+        status = (TextView) findViewById(R.id.workingStatus);
+```
+
+```
+public void onGetFocusedButtonClicked(View view) {
+        Intent getWorkingPomodoroIntent = new Intent(this, WorkingPomodoro.class) ;
+        final int result = 1;
+
+        getWorkingPomodoroIntent.putExtra("callingActivity", "MainActivity");
+        startActivityForResult(getWorkingPomodoroIntent, result);
+
+    }
+```
+
+The funcion responsible for TextView setting time and progressBar setting proggress whith timer is the following:
+```
+@Override
+			 public void onTick(long millisUntilFinished) {
+					 status.setText("Focus time");
+					 textView1.setText(new SimpleDateFormat("mm:ss").format(new Date( millisUntilFinished)));
+					 int progress = (int) (millisUntilFinished/1000);
+					 progressBar.setProgress(progressBar.getMax()-progress);
+			 }
+```
+
+The full code can be found on Github (See the link below).
 
 <div class="custom-image"><img src="https://66.media.tumblr.com/3d95b05a3bd554e5656a5c216b9fe4f4/tumblr_o72zz02b2i1rl36tko2_1280.jpg" /></div>
 

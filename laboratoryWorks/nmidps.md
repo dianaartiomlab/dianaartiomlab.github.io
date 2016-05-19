@@ -38,15 +38,22 @@ The following step, according to the tasks, was to simply add three static pages
 	<li>a login/sign up page(generated with devise) </li>
 </ul>
 
+Screenshots of these pages can be found below.
+
+<div class="custom-image"><img src="https://66.media.tumblr.com/23e9a96400a22a179019fcd7c00a8ac4/tumblr_o7fhedbEaX1udztn8o1_1280.png" /></div>
+
+
 Moreover, my site should keep all site data in a database. <br />
 In order to do that I used sqlite3 as database for Active Record. The table for the posts looks like this:
 <div class="custom-image"><img src="https://65.media.tumblr.com/48d0a83c0a17b60717315acc3fcf042b/tumblr_o7ffwzvnBj1udztn8o1_500.png" /></div>
 
 I AJAX Requests when adding a new post and when deleting one. Ajax (Asynchronous JavaScript and XML) is used as a mechanism for sending and retrieving data asynchronously (in the background). While XML can certainly be used with ajax, it is not limited to this format. The JSON format, for example, is more commonly used today, especially in the Rails community. There are significant advantages in using Ajax, which include better user interactivity. Ajax allows content on a page to be updated without having to re-render the entire page, making it a “seamless” experience. Thus, when pressing "Add new post" or "Delete" button the browser is not reloaded, but the newly created object is rendered.
 
+<div class="custom-image"><img src="https://66.media.tumblr.com/4f08d57f43e199f5416c643749f7af15/tumblr_o7fhbvLndQ1udztn8o1_540.png" /></div>
+
 <br />
 
-You can visit my <a href="https://github.com/dianaartiom/pomodoro">Github account</a> to see the code.
+You can visit my <a href="https://github.com/dianaartiom/green-rainbow">Github account</a> to see the code.
 
 ###Conclusion:
 Basically, most of the things while performing this laboratory work were known. The interesting was the part with Ajax. I did't know what this is and that was fine. I've got something to learn, that made the lab more enjoying. So far, the thing I liked the most is that by using Ajax you can update content on the page without rendering the entire page. I got stuck in the beginning, but after a couple of sites the things shaped themselves to be a bit more clear. I liked the way it worked in the case of creating a post, that's why I decided add this feature to the "Delete" button. It was fun and I really enjoyed the lab.

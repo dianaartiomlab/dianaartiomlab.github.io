@@ -40,7 +40,7 @@ The following step, according to the tasks, was to simply add three static pages
 
 Screenshots of these pages can be found below.
 
-<div class="custom-image"><img src="https://66.media.tumblr.com/23e9a96400a22a179019fcd7c00a8ac4/tumblr_o7fhedbEaX1udztn8o1_1280.png" /></div>
+<div class="custom-image"><img src="https://66.media.tumblr.com/5a7f9f574f132729d30a0c10f7439b19/tumblr_o7flmb3wRw1udztn8o1_1280.png" /></div>
 
 
 Moreover, my site should keep all site data in a database. <br />
@@ -49,7 +49,7 @@ In order to do that I used sqlite3 as database for Active Record. The table for 
 
 I AJAX Requests when adding a new post and when deleting one. Ajax (Asynchronous JavaScript and XML) is used as a mechanism for sending and retrieving data asynchronously (in the background). While XML can certainly be used with ajax, it is not limited to this format. The JSON format, for example, is more commonly used today, especially in the Rails community. There are significant advantages in using Ajax, which include better user interactivity. Ajax allows content on a page to be updated without having to re-render the entire page, making it a “seamless” experience. Thus, when pressing "Add new post" or "Delete" button the browser is not reloaded, but the newly created object is rendered.
 
-<div class="custom-image"><img src="https://66.media.tumblr.com/4f08d57f43e199f5416c643749f7af15/tumblr_o7fhbvLndQ1udztn8o1_540.png" /></div>
+<div class="custom-image"><img src="https://67.media.tumblr.com/58a33b08d2bfce2dde59c9b8bac7add2/tumblr_o7flimUF9O1udztn8o1_1280.png" /></div>
 
 <br />
 

@@ -73,15 +73,11 @@ The first step in order to create a super fancy pomodoro app, was to learn, to g
 No, not this, the other one:
 <div class="custom-image"><img src="http://s2.djyimg.com/n3/eet-content/uploads/2014/02/Indian-head-shake.gif" /></div>
 
-The next step was to choose a fancy bakground for my app. The following images were candidates for my app:
-
-<div class="custom-image"><img src="http://cdn.newsday.com/polopoly_fs/1.3718944.1337353874!/httpImage/image.JPG_gen/derivatives/display_600/image.JPG" /></div>
-<div class="custom-image"><img src="http://bemol.md/wp-content/uploads/2015/08/causeni.jpg" /></div>
-<div class="custom-image"><img src="http://dogr.io/doge.png" /></div>
-
-In fact, none of this photos were used. The background of my app, looks as serious as the name of my app: "SeriousPomodoro".
+The next step was to choose a fancy bakground for my app.
 <br />
+  The background of my app, looks as serious as the name of my app: "SeriousPomodoro".
 <br />
+
 
 In my project I have 2 classes  - `MainWindow` and `WorkingPomodoro`. The first class is responsible for the main window screen and the second class is responsible for another Intent in which I actually created the progress bar and the timer.
 

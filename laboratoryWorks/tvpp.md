@@ -49,3 +49,19 @@ requirement 1
 requirement 2
 requirement 3
 ```
+
+##Conclusion:
+Whether the task was done correctly, one thing is clear: it seemed to be much more simple. When we were provided with the task - situation changed. It turns out that it is not easy at all. And it is way more complicated than it might appear. Since the task was performed, these are the main things that, in my opinion, shouldn't be forgotten:
+<ul>
+  <li>Getting the requirements right is crucial to the success of the interactive product.  </li>
+  <li>There are different types of requirements:<br />
+    1. Functional, data, environmental, user and usability. <br />
+    2. Every system will have requirements under each of these headings. <br />    
+  </li>
+  <li>Most commonly used data-gathering techniques for establishing requirements include:<br />
+  Questionnaires, interviews, workshops or focus groups, naturalistic observation, and studying documentation. </li>
+  <li>Describing user tasks such as scenarios, use cases and essential use cases can help to
+articulate existing user work practices. <br /> They also help to express envisioned use for new devices.</li>
+  <li>Task analysis techniques help to investigate an existing situation, i.e. existing systems
+and current practices.</li>
+<ul>

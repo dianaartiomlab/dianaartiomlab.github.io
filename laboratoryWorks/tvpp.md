@@ -2,6 +2,9 @@
 layout: default
 title: Software Testing
 ---
+# Software Testing
+
+<div class="custom-image"><img src="http://spancs.com/wp-content/uploads/testing1.png" /></div>
 ##Laboratory Work No.1
 ###Topic: Establishment of requirements for a specific project
 

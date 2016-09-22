@@ -36,3 +36,16 @@ The following diagram categorizes the requirements in several parts:
 <div class="custom-image"><img src="https://67.media.tumblr.com/a8f3524abcc2fc9c8f6e214bfcd8bffa/tumblr_odwdq61D7I1udztn8o1_540.png" /></div>
 
 ##Work process
+During the first laboratory work, we were provided with two main tasks:
+<ol>
+  <li>To generate an idea, and, by collaborating with another team, to express them our needs. </li>
+  <li>To establish requirements of another team's project and their needs.
+</ol>
+
+The process was very interesting. On the other hand, we did not go deep into the requirements the customer needs. But still, we've come up with a brief representation of how our requirements model looks like:
+
+```$
+requirement 1
+requirement 2
+requirement 3
+```

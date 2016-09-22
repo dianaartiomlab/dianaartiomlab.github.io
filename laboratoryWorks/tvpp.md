@@ -1,0 +1,38 @@
+---
+layout: default
+title: Software Testing
+---
+##Laboratory Work No.1
+###Topic: Establishment of requirements for a specific project
+
+####Overview
+The software development world is a really interesting one. One the other hand - event if things seem to look great, it is not that easy to develop a project. Moreover, it becomes really difficult and annoying when the project grows. One team might even find out that all the work that was done needs to be changed drastically. Some new functionalities ca be conflicting with what was thought at the beginning. In order to avoid these kind of situations, a team will be interesting in finding out as much as possible information regarding the project, about the customer's needs.  By identifying the needs, we strive to understand as much as possible about the users, as well as their work and the context of their work. We should take into account that system under development should support users in achieving their goals.<br />
+
+Just after finding out what the customer's needs are - a project can be started to be analyzed, and requirements can be, step by step, established. What we actually do is building upon the needs identified a set of requirements. <br />
+
+While establishing the requirements, we will use  a user centered approach.
+#####  A user-centered approached to development:
+<ul>
+  <li>Study that investigated the causes of IT project failure found that “requirements definition” was
+the most frequently cited project stage that caused failure.</li>
+  <li>Understanding what the product should do and making sure it meets the stakeholders’ needs are
+absolutely critical to the success of the product.</li>
+</ul>
+
+
+##### But before proceeding to the laboratory work task, what are requirements ?
+After analyzing several resources, I found out: <br />
+A requirement is a statement that specifies what an intended product should do, or
+how it should perform. <br />
+######Traditionally, two types of requirements:
+<ol>
+  <li>Functional requirements specify what the system should do. </li>
+  <li>Non-Functional requirements specify what constraints there are on the system or its development. </li>
+</ol>
+
+Also, interaction design requires us to understand both the functionality required and the constraints for development or operation of the product. <br />
+The following diagram categorizes the requirements in several parts:
+
+<div class="custom-image"><img src="https://67.media.tumblr.com/a8f3524abcc2fc9c8f6e214bfcd8bffa/tumblr_odwdq61D7I1udztn8o1_540.png" /></div>
+
+##Work process

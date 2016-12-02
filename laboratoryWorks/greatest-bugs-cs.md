@@ -4,7 +4,7 @@ title: History of Computers
 ---
 # Greatest Software Bugs
 
-<div class="custom-image"><img src="images/bug-software.png" /></div>
+<div class="custom-image"><img src="/images/bug-software.png" /></div>
 
 Software development is a very interesting process. Despite that, a programmer should be very careful while writing programs. Applications are developed in almost every domain of our life, including education, medicine, government, etc. A programmer’s fate is to cover as many devices and OS versions as possible, and to assure its compatibility on other versions, i.e. to make sure it works well not only on his own machine.  Moreover, it might appear to run well on some machine, but it will better be tested on multiple machines to assure the software program works well there. And we already know that. Because we, humans, already faced some serious issues, some serious bugs, that caused extreme consequences, like human deaths, resources wasting, pollution, and, even if at the first sight it might appear not that important, time wasting - also a great resource, people forget to take into account. <br />
 

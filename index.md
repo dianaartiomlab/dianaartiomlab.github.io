@@ -13,4 +13,4 @@ Grants Team Leader in AIESEC Chisinau,<br />
 Member of the faculty Council,<br />
 Member of Syndicalist Student Council,<br />
 FAF Seminars Responsible Organiser<br />
-<img src="https://scontent-frt3-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10151832_882619958461340_3745657578337735084_n.jpg?oh=ffc74b09ef9c4801cea9ce3d96a076cd&oe=576206CF" alt="">
+<img src="images/diana-swm.jpg" alt="">
